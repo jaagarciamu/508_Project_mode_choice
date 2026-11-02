@@ -1,0 +1,16 @@
+project:
+  name: "Mode Choice Bogotá — EM2023"
+  status: "foundation"
+  current_level: 0
+
+data_governance:
+  source_data_immutable: true
+  raw_data_git_policy: "local_only"
+  raw_data_path: "data/sources/raw"
+  database_path: "data/sources/raw/Database"
+
+methodology:
+  survey_relationships: "pending_empirical_validation"
+  mode_mapping: "pending_documentation_review"
+  zat_mapping: "pending_documentation_review"
+  expansion_factor_use: "pending_documentation_review"

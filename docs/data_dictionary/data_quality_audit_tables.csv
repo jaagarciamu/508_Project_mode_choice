@@ -1,0 +1,6 @@
+﻿source_path,column_count,row_count,row_width_mismatch_count,exact_duplicate_row_count,empty_cell_count,whitespace_only_cell_count
+data/sources/raw/Database/a. Modulo hogares.csv,27,22755,0,0,0,0
+data/sources/raw/Database/b. Modulo vehiculos.csv,19,17392,0,0,17392,0
+data/sources/raw/Database/c. Modulo personas.csv,40,67556,0,0,0,0
+data/sources/raw/Database/d. Modulo viajes.csv,47,100174,0,0,0,0
+data/sources/raw/Database/e. Modulo etapas.csv,38,110881,0,0,0,0

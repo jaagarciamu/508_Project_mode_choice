@@ -1,0 +1,31 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter local state
+.ipynb_checkpoints/
+
+# Local source data: preserve the existing folder locally, never commit its contents
+/data/sources/raw/
+
+# Locally generated data and outputs
+/data/relational/*
+!/data/relational/README.md
+/data/interim/*
+!/data/interim/README.md
+/data/analytical/*
+!/data/analytical/README.md
+/outputs/tables/*
+!/outputs/tables/README.md
+/outputs/figures/*
+!/outputs/figures/README.md
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.log

@@ -1,0 +1,6 @@
+﻿table_name,source_path,source_row_count,loaded_row_count,source_column_count,source_headers_preserved,stored_column_type,primary_key_field,alternate_unique_fields_json,row_width_mismatch_count,status
+hogares,data/sources/raw/Database/a. Modulo hogares.csv,22755,22755,27,True,TEXT,key_hg,"[""cod_hog""]",0,loaded
+vehiculos,data/sources/raw/Database/b. Modulo vehiculos.csv,17392,17392,19,True,TEXT,cod_vh,[],0,loaded
+personas,data/sources/raw/Database/c. Modulo personas.csv,67556,67556,40,True,TEXT,key_persona,"[""cod_per""]",0,loaded
+viajes,data/sources/raw/Database/d. Modulo viajes.csv,100174,100174,47,True,TEXT,key_viaje,"[""cod_vj""]",0,loaded
+etapas,data/sources/raw/Database/e. Modulo etapas.csv,110881,110881,38,True,TEXT,key_etapa,"[""cod_eta""]",0,loaded

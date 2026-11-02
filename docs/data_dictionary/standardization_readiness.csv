@@ -1,0 +1,6 @@
+﻿source_path,source_encoding,source_delimiter,source_column_count,source_row_count,header_matches_schema,row_width_mismatch_count,technical_key_field,technical_key_empty_count,technical_key_whitespace_only_count,technical_key_duplicate_count,all_source_values_read_as_text,readiness_status
+data/sources/raw/Database/a. Modulo hogares.csv,cp1252,;,27,22755,True,0,key_hg,0,0,0,True,ready
+data/sources/raw/Database/b. Modulo vehiculos.csv,cp1252,;,19,17392,True,0,cod_vh,0,0,0,True,ready
+data/sources/raw/Database/c. Modulo personas.csv,cp1252,;,40,67556,True,0,key_persona,0,0,0,True,ready
+data/sources/raw/Database/d. Modulo viajes.csv,cp1252,;,47,100174,True,0,key_viaje,0,0,0,True,ready
+data/sources/raw/Database/e. Modulo etapas.csv,cp1252,;,38,110881,True,0,key_etapa,0,0,0,True,ready

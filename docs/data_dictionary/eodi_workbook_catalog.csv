@@ -1,0 +1,9 @@
+﻿source_role,source_path,sheet_name,max_row_including_header,max_column,observation_rows_if_header_row
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,PORTADA,64,15,63
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,CONTENIDO,32,13,31
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,34,4,33
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,200946,33,200945
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,PORTADA,64,15,63
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,CONTENIDO,32,13,31
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,8,4,7
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,3957,7,3956

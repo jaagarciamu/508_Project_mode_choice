@@ -1,0 +1,172 @@
+﻿source_path,column_position,source_name,row_count,empty_cell_count,whitespace_only_cell_count,numeric_parseable_count,numeric_parseable_share,is_identifier_candidate,candidate_distinct_nonempty_count,candidate_repeated_nonempty_count,candidate_status
+data/sources/raw/Database/a. Modulo hogares.csv,1,fecha,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,2,cod_viv,22755,0,0,22755,1.0,True,21669,1086,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/a. Modulo hogares.csv,3,cod_hog,22755,0,0,22755,1.0,True,22755,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/a. Modulo hogares.csv,4,cod_utam_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,5,nom_utam_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,6,zat_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,7,cod_upl_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,8,nom_upl_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,9,cod_mpio_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,10,nom_mpio_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,11,cod_loc_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,12,nom_loc_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,13,estrato_hg,22755,0,0,17506,0.7693254229839596,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,14,cod_dane_manzana_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,15,tipo_enc,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,16,tipo_zona_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,17,cod_barrio_vereda_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,18,nom_barrio_vereda_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,19,tipo_viv,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,20,cant_hg_viv,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,21,perstotal_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,22,pers>5años_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,23,pers>18años_hg,22755,0,0,22755,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,24,ingre_mes_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,25,cómo_enteró,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/a. Modulo hogares.csv,26,key_hg,22755,0,0,0,0.0,True,22755,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/a. Modulo hogares.csv,27,fexp_hg,22755,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,1,cod_vh,17392,0,0,17392,1.0,True,17392,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/b. Modulo vehiculos.csv,2,cod_viv,17392,0,0,17392,1.0,True,12269,5123,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/b. Modulo vehiculos.csv,3,cod_hog,17392,0,0,17392,1.0,True,12582,4810,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/b. Modulo vehiculos.csv,4,cod_utam_hg,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,5,zat_hg,17392,0,0,17392,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,6,cod_upl_hg,17392,0,0,17392,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,7,nom_mun_hg,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,8,estrato_hg,17392,0,0,13454,0.7735740570377185,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,9,tipo_vehículo,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,10,cantidad,17392,0,0,17392,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,11,tipo_combustible,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,12,mun_matricula,17392,0,0,7673,0.4411798528058878,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,13,tipo_placa,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,14,exento_pyp,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,15,modelo,17392,0,0,10628,0.6110855565777369,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,16,propiedad_vh,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,17,key_hg,17392,0,0,0,0.0,True,12582,4810,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/b. Modulo vehiculos.csv,18,fexp_vh,17392,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/b. Modulo vehiculos.csv,19,,17392,17392,0,0,,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,1,cod_per,67556,0,0,67556,1.0,True,67556,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/c. Modulo personas.csv,2,cod_hg,67556,0,0,67556,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,3,nom_mun_hg,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,4,cod_upl_hg,67556,0,0,67556,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,5,cod_utam_hg,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,6,zat_hg,67556,0,0,67556,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,7,estra_hg,67556,0,0,50816,0.7522055775948843,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,8,orden,67556,0,0,67556,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,9,edad,67556,0,0,67556,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,10,sexo,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,11,genero,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,12,orien_sexual,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,13,identidad_etnica,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,14,madre_cab_familia,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,15,max_nivel_edu,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,16,ocupacion_principal,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,17,actividad_economica,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,18,permanencia_entre_semana,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,19,quien_lleva/recoge_establecimiento,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,20,cuidado_despues_regresar,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,21,condicion_discapacidad,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,22,RLCPD,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,23,cuidado_entre_semana_discap,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,24,dific_princ_medios_transp_discap,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,25,licencia_cond_vigente,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,26,posee_celular,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,27,realiza_desplazamientos,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,28,modo_principal_pre-pandemia,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,29,modo_principal_pandemia,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,30,razón_cambio_pandemia,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,31,cambio_frecuencia_post-pandemia,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,32,cambio_modo_pico_placa,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,33,cambio_modo_grandes_obra,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,34,cambio_modo_seguridad,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,35,acto_violencia_sexual,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,36,lugar_violencia_sexual,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,37,a_quien_acudio,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/c. Modulo personas.csv,38,key_hg,67556,0,0,0,0.0,True,22755,44801,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/c. Modulo personas.csv,39,key_persona,67556,0,0,0,0.0,True,67556,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/c. Modulo personas.csv,40,fexp_per>5años,67556,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,1,cod_hg,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,2,nom_mun_hg,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,3,cod_upl_hg,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,4,cod_utam_hg,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,5,zat_hg,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,6,estra_hg,100174,0,0,77663,0.7752810110407891,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,7,cod_pers,100174,0,0,100174,1.0,True,48539,51635,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/d. Modulo viajes.csv,8,cod_vj,100174,0,0,100174,1.0,True,100174,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/d. Modulo viajes.csv,9,orden_vj,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,10,otro_vj,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,11,zat_ori,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,12,utam_ori,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,13,upl_ori,100174,0,0,79032,0.7889472318166391,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,14,localidad_ori,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,15,nom_mun_ori,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,16,zat_des,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,17,utam_des,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,18,upl_des,100174,0,0,79192,0.7905444526523848,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,19,localidad_des,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,20,nom_mun_des,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,21, hora_ini ,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,22,hora_fin,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,23, duracion_min ,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,24,t_acceso_min,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,25,t_espera_min,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,26,t_egreso_min,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,27,modo_principal_agrupado,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,28,modo_principal_desagrupado,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,29,motivo_viaje,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,30,motivo_viaje_cuidado,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,31,frecuencia_viaje,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,32,etapas,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,33,app_antes_vj,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,34,app_durante_vj,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,35,edad,100174,0,0,100174,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,36,sexo,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,37,genero,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,38,orien_sexual,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,39,identidad_etnica,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,40,madre_cab_familia,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,41,max_nivel_edu,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,42,ocupacion_principal,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/d. Modulo viajes.csv,43,key_hg,100174,0,0,0,0.0,True,21508,78666,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/d. Modulo viajes.csv,44,key_pers,100174,0,0,0,0.0,True,48539,51635,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/d. Modulo viajes.csv,45,key_pers_viaja,100174,0,0,0,0.0,True,48539,51635,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/d. Modulo viajes.csv,46,key_viaje,100174,0,0,0,0.0,True,100174,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/d. Modulo viajes.csv,47,fexp_vj,100174,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,1,cod_eta,110881,0,0,110881,1.0,True,110881,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/e. Modulo etapas.csv,2,cod_vj,110881,0,0,110881,1.0,True,100174,10707,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/e. Modulo etapas.csv,3,cod_pers,110881,0,0,110881,1.0,True,48539,62342,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/e. Modulo etapas.csv,4,cod_hg,110881,0,0,110881,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,5,nom_mun_hg,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,6,cod_upl_hg,110881,0,0,110881,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,7,cod_utam_hg,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,8,zat_hg,110881,0,0,110881,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,9,estra_hg,110881,0,0,86077,0.7763007187886112,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,10,orden_eta,110881,0,0,110881,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,11,etapas,110881,0,0,110881,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,12,modo_etapa,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,13,modo_principal_vj,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,14,uso_veh_hg_cod,110881,0,0,17472,0.15757433645078958,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,15,t_acceso_min,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,16,t_espera_min,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,17,pago_viaje,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,18,costo_viaje,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,19,modalidad_pago_vj,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,20,lugar_parqueo,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,21,t_parqueo_min,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,22,costo_parqueo,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,23,t_egreso_min,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,24,motivo_viaje,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,25,edad,110881,0,0,110881,1.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,26,sexo,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,27,genero,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,28,orien_sexual,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,29,identidad_etnica,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,30,mad_cab_familia,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,31,max_nivel_educativo,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,32,ocupación_principal,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,33,actividad_economica,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,34,condicion_discapacidad,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,35,licencia_vigente,110881,0,0,0,0.0,False,,,not_flagged_by_name
+data/sources/raw/Database/e. Modulo etapas.csv,36,key_viaje,110881,0,0,0,0.0,True,100174,10707,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/e. Modulo etapas.csv,37,key_etapa,110881,0,0,0,0.0,True,110881,0,name_based_candidates_only; uniqueness_and_scope_not_tested
+data/sources/raw/Database/e. Modulo etapas.csv,38,fexp_eta,110881,0,0,0,0.0,False,,,not_flagged_by_name

@@ -1,0 +1,9 @@
+paths:
+  source_root: "data/sources/raw"
+  source_database: "data/sources/raw/Database"
+  source_documentation: "data/sources/raw/documentation"
+  relational: "data/relational"
+  interim: "data/interim"
+  analytical: "data/analytical"
+  tables_output: "outputs/tables"
+  figures_output: "outputs/figures"

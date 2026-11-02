@@ -1,0 +1,176 @@
+﻿source_role,source_path,sheet_name,source_position_1based,source_field_name,header_status,documented_definition,documented_values_or_range,definition_status
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ID,dictionary_entry,Código único de encuesta,Código único que relaciona el número de la encuesta de la base efectiva con la aplicada.,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Longitud_estación,dictionary_entry,Longitud del punto de encuesta,Número con decimales que indica la longitud del punto de aplicación,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Latitud_estación,dictionary_entry,Latitud del punto de encuesta,Número con decimales que indica la latitud del punto de aplicación,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ID_estación,dictionary_entry,Identificador de la estación donde se realizo la encuesta,"Estaciones de transporte privado, Bicicleta en ciclurruta, Transmilenio/Transmicable y Tranporte público definidas en el diseño muestral.",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Tipo,dictionary_entry,Clase de encuesta por agrupación general del modo de transporte,"T1: Transporte Privado
+T2: Bicicleta en ciclorruta
+T3: BRT
+T4:Transporte Público",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Periodo,dictionary_entry,Franja horaria de realización de la encuesta ,"AM: encuestas aplicadas en el período de la mañana (5:30 - 8:30)
+PM: encuestas aplicadas en el período de la tarde (16:00 - 19:00)",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Sentido,dictionary_entry,Dirección de circulación del tráfico,"Sentido cardinal en que circulaba el encuestado (N-S, S-N, W-E, E-W, ingreso)",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Categoría,dictionary_entry,Se refiere a la tipología vehicular encuestada,"Auto
+Moto
+Bicicleta en calzada
+Bicicleta en ciclorruta
+BRT
+Especial ocupado
+Moto
+Taxi ocupado
+TPC intermunicipal
+TPC urbano",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,tipo_vehiculo/servicio,dictionary_entry,Unidad de transporte en el que se movilizaba la persona encuestada,"Auto
+Moto
+Bicicleta Convencional
+Bicicleta Pública
+Bicicleta Eléctrica
+Taxi Ocupado
+Especial Liviano Ocupado
+SITP/Urbano
+Alimentador
+Intermunicipal
+BRT",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ocupacion,dictionary_entry,Ocupación del vehículo sin incluir al condutor del mismo,"De acuerdo al tipo de vehículo encuestado, se permiten los siguientes valores:
+T1: 0 - 10
+T2: 0 - 3
+T3:N/A
+T4: 0 -70",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,tipo_encuestado,dictionary_entry,Condición en la que viajaba el encuestado,"Conductor
+Pasajero",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,sexo,dictionary_entry,Sexo del encuestado,"Femenino
+Masculino",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,origen_ciudad_municipio,dictionary_entry,Ciudad o municipio de origen del viaje ,Nombre de la ciudad o municipio.,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Longitud_Org,dictionary_entry,Longitud del punto de origen,Número con decimales que indica la longitud del punto de origen,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Latitud_Org,dictionary_entry,Latitud del punto de origen,Número con decimales que indica la latitud del punto de origen,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ID_Origen,dictionary_entry,Código del punto de origen,Código único que representa la ubicación del origen del viaje,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ZAT_Origen,dictionary_entry,Zona de análisis de Transporte del origen,"Número entero que puede tomar valores entre 1-1916, los valores reportados con ""cero""  corresponden a municipios que no se encuentran dentro de la zonificación",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,origen_actividad,dictionary_entry,Actividad que estaba realizando el encuestado en el origen del viaje,"01:Trabajando
+02:Estudiando
+03:En asuntos médicos personales             
+04:Visitando a alguien
+05:En el hogar
+06:Realizando algún trámite personal
+07:Llevando y/o dejando algo
+08:Realizando compras
+09:Realizando actividades recreativas y culturales
+10:Realizando actividades físicas y/o deportivas
+11:Buscando trabajo
+12:Asistiendo a alguna actividad de tipo religioso y/o de culto
+13:Acompañando a alguien con remuneración
+14:Acompañando a alguien sin remuneración
+15:Conduzco un vehículo como forma de trabajo (Ejemplo: mensajero, taxista)
+16:En otro asunto
+17:No sabe/No responde",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,destino_ciudad_municipio,dictionary_entry,Ciudad o municipio de destino del viaje ,Nombre de la ciudad o municipio.,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Longitud_Des,dictionary_entry,Longitud del punto de destino,Número con decimales que indica la longitud del punto de destino,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,Latitud_Des,dictionary_entry,Latitud del punto de destino,Número con decimales que indica la latitud del punto de desino,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ID_Destino,dictionary_entry,Código del punto de destino,Código único que representa la ubicación del destino del viaje,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,ZAT_Destino,dictionary_entry,Zona de análisis de Transporte del destino,"Número entero que puede tomar valores entre 1-1916, los valores reportados con ""cero""  corresponden a municipios que no se encuentran dentro de la zonificación",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,destino_actividad,dictionary_entry,Actividad que va a realizar el encuestado en el destino del viaje,"01:A trabajar
+02:A Estudiar
+03:A asuntos médicos personales             
+04:A visitar a alguien
+05:A regresar al hogar
+06:A realizar algún trámite personal
+07:A llevar y/o dejar algo
+08:A realizar compras
+09:A realizar actividades recreativas y culturales
+10:A realizar actividades físicas y/o deportivas
+11:A buscar trabajo
+12:A asistir a alguna actividad de tipo religioso y/o de culto
+13:A acompañar a alguien con remuneración
+14:A acompañar a alguien sin remuneración
+15:Conduzco un vehículo como forma de trabajo (Ejemplo: mensajero, taxista)
+16:A otro asunto
+17:No sabe/No responde",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,utilizo_otro_medio,dictionary_entry,Señala el modo que utilizó el encuestado antes de la interceptación del viaje,"Ninguno
+Bicicleta
+Moto
+Automóvil
+Taxi
+Transporte público
+Otro",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,utilizara_otro_medio,dictionary_entry,Señala el modo que utilizará el encuestado después de la interceptación del viaje,"Ninguno
+Bicicleta
+Moto
+Automóvil
+Taxi
+Transporte público
+Otro",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,disponia_otro_vehiculo,dictionary_entry,Indica cuál otro modo de transporte disponía el encuestado para realizar el viaje interceptado,"Ninguno
+Bicicleta
+Moto
+Automóvil
+Taxi
+Camión
+Especial
+Otro",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,hara_transferencia,dictionary_entry,Indica si el encuestado realizará transferencia en el sistema Transmilenio/Transmicable,"SI
+NO",source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,cual_estacion,dictionary_entry,Indica en qué estación de Transmilenio/Transmicable hará transferencia el encuestado,Cualquier estación de Transmilenio/Transmicable que no sea la estación encuestada.,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,estacion_sale,dictionary_entry,Indica de qué estación de Transmilenio/Transmicable sale el encuestado,Cualquier estación de Transmilenio/Transmicable,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,edad,dictionary_entry,Edad del encuestado.,Valor numérico entre 1-100,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,estrato,dictionary_entry,Estrato socioeconómico de la vivienda del encuestado.,Valor numérico entre 1-6,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,DICC,,fexp_sin DC,dictionary_entry,Factor de ponderación,,source_dictionary_text; field_match_pending
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,1,,blank_source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,2,Longitud_estación,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,3,Latitud_estación,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,4,ID_estación,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,5,Tipo,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,6,Periodo,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,7,Sentido,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,8,Categoría,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,9,tipo_vehiculo/servicio,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,10,ocupacion,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,11,tipo_encuestado,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,12,sexo,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,13,origen_ciudad_municipio,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,14,Longitud_Org,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,15,Latitud_Org,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,16,ID_Origen,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,17,ZAT_Origen,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,18,origen_actividad,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,19,destino_ciudad_municipio,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,20,Longitud_Des,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,21,Latitud_Des,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,22,ID_Destino,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,23,ZAT_Destino,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,24,destino_actividad,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,25,utilizo_otro_medio,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,26,utilizara_otro_medio,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,27,disponia_otro_vehiculo,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,28,hara_transferencia,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,29,cual_estacion,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,30,estacion_sale,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,31,edad,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,32,estrato,source_header,,,pending_dictionary_match
+intercept_survey,data/sources/raw/EODI/04_Base datos/a. Base de datos con factores de ponderacion y sin dobles conteos.xlsx,BD,33,fexp_sin DC,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,Tipología,dictionary_entry,Se refiere a la categoría de la tipología vehicular aforada,"Auto
+Moto
+Bicicleta en calzada
+Bicicleta en ciclorruta
+BRT
+Especial ocupado
+Moto
+Taxi ocupado
+TPC intermunicipal
+TPC urbano
+Camión Grande (CG)
+Camión Pequeño (CP)
+Escolar",source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,ID,dictionary_entry,Identificador de la estación donde se realizo el aforo,"Estaciones de aforo de transporte privado, Bicicleta en ciclurruta, Transmilenio/Transmicable y Tranporte público definidas en el diseño muestral.",source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,Localización,dictionary_entry,Intersección del aforo,Dirección o punto de referencia de los aforos realizados,source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,EODI,dictionary_entry,Intersección del aforo en donde se realizaron encuestas EODI,"SI: se realizaron encuestas EODI
+NO: no se realizaron encuestas EODI",source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,Periodo,dictionary_entry,Periodo de realización de la encuesta ,"AM: encuestas aplicadas en el período de la mañana (5:30 - 8:30)
+PM: encuestas aplicadas en el período de la tarde (16:00 - 19:00)",source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,Sentido,dictionary_entry,Dirección del tráfico,"Sentido cardinal en que circulaba el encuestado (N-S, S-N, W-E, E-W, ingreso)",source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,DICC,,Volumen,dictionary_entry,Cantidad de vehículos por intersección,número de vehículos mixtos que pasan en la hora de máxima demanda,source_dictionary_text; field_match_pending
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,1,TIPOLOGIA,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,2,ID,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,3,LOCALIZACIÓN,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,4,EODI,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,5,PERIODO,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,6,SENTIDO,source_header,,,pending_dictionary_match
+traffic_counts,data/sources/raw/EODI/03_Aforos/a. Base de datos aforos hora de maxima demanda.xlsx,BD,7,VOLUMEN,source_header,,,pending_dictionary_match

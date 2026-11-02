@@ -1,0 +1,958 @@
+[
+  {
+    "source_path": "data/sources/raw/Database/a. Modulo hogares.csv",
+    "encoding": "cp1252",
+    "delimiter": ";",
+    "candidate_identifiers_unverified": [
+      "cod_viv",
+      "cod_hog",
+      "key_hg"
+    ],
+    "candidate_status": "name_based_candidates_only; uniqueness_and_scope_not_tested",
+    "columns": [
+      {
+        "source_name": "fecha",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_viv",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_hog",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_utam_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_utam_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_upl_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_upl_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_mpio_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mpio_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_loc_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_loc_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "estrato_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_dane_manzana_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "tipo_enc",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "tipo_zona_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_barrio_vereda_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_barrio_vereda_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "tipo_viv",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cant_hg_viv",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "perstotal_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "pers>5años_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "pers>18años_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "ingre_mes_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cómo_enteró",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "fexp_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      }
+    ],
+    "structural_anomalies": {
+      "empty_header_positions": [],
+      "whitespace_header_names": [],
+      "duplicate_headers": []
+    }
+  },
+  {
+    "source_path": "data/sources/raw/Database/b. Modulo vehiculos.csv",
+    "encoding": "cp1252",
+    "delimiter": ";",
+    "candidate_identifiers_unverified": [
+      "cod_vh",
+      "cod_viv",
+      "cod_hog",
+      "key_hg"
+    ],
+    "candidate_status": "name_based_candidates_only; uniqueness_and_scope_not_tested",
+    "columns": [
+      {
+        "source_name": "cod_vh",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_viv",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_hog",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_utam_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_upl_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mun_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "estrato_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "tipo_vehículo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cantidad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "tipo_combustible",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "mun_matricula",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "tipo_placa",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "exento_pyp",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modelo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "propiedad_vh",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "fexp_vh",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      }
+    ],
+    "structural_anomalies": {
+      "empty_header_positions": [
+        19
+      ],
+      "whitespace_header_names": [],
+      "duplicate_headers": []
+    }
+  },
+  {
+    "source_path": "data/sources/raw/Database/c. Modulo personas.csv",
+    "encoding": "cp1252",
+    "delimiter": ";",
+    "candidate_identifiers_unverified": [
+      "cod_per",
+      "key_hg",
+      "key_persona"
+    ],
+    "candidate_status": "name_based_candidates_only; uniqueness_and_scope_not_tested",
+    "columns": [
+      {
+        "source_name": "cod_per",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mun_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_upl_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_utam_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "estra_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "orden",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "edad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "sexo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "genero",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "orien_sexual",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "identidad_etnica",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "madre_cab_familia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "max_nivel_edu",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "ocupacion_principal",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "actividad_economica",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "permanencia_entre_semana",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "quien_lleva/recoge_establecimiento",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cuidado_despues_regresar",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "condicion_discapacidad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "RLCPD",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cuidado_entre_semana_discap",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "dific_princ_medios_transp_discap",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "licencia_cond_vigente",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "posee_celular",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "realiza_desplazamientos",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modo_principal_pre-pandemia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modo_principal_pandemia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "razón_cambio_pandemia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cambio_frecuencia_post-pandemia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cambio_modo_pico_placa",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cambio_modo_grandes_obra",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cambio_modo_seguridad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "acto_violencia_sexual",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "lugar_violencia_sexual",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "a_quien_acudio",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_persona",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "fexp_per>5años",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      }
+    ],
+    "structural_anomalies": {
+      "empty_header_positions": [],
+      "whitespace_header_names": [],
+      "duplicate_headers": []
+    }
+  },
+  {
+    "source_path": "data/sources/raw/Database/d. Modulo viajes.csv",
+    "encoding": "cp1252",
+    "delimiter": ";",
+    "candidate_identifiers_unverified": [
+      "cod_pers",
+      "cod_vj",
+      "key_hg",
+      "key_pers",
+      "key_pers_viaja",
+      "key_viaje"
+    ],
+    "candidate_status": "name_based_candidates_only; uniqueness_and_scope_not_tested",
+    "columns": [
+      {
+        "source_name": "cod_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mun_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_upl_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_utam_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "estra_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_pers",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "orden_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "otro_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_ori",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "utam_ori",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "upl_ori",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "localidad_ori",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mun_ori",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_des",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "utam_des",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "upl_des",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "localidad_des",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mun_des",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": " hora_ini ",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "hora_fin",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": " duracion_min ",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_acceso_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_espera_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_egreso_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modo_principal_agrupado",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modo_principal_desagrupado",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "motivo_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "motivo_viaje_cuidado",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "frecuencia_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "etapas",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "app_antes_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "app_durante_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "edad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "sexo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "genero",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "orien_sexual",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "identidad_etnica",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "madre_cab_familia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "max_nivel_edu",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "ocupacion_principal",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_pers",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_pers_viaja",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "fexp_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      }
+    ],
+    "structural_anomalies": {
+      "empty_header_positions": [],
+      "whitespace_header_names": [
+        " hora_ini ",
+        " duracion_min "
+      ],
+      "duplicate_headers": []
+    }
+  },
+  {
+    "source_path": "data/sources/raw/Database/e. Modulo etapas.csv",
+    "encoding": "cp1252",
+    "delimiter": ";",
+    "candidate_identifiers_unverified": [
+      "cod_eta",
+      "cod_vj",
+      "cod_pers",
+      "key_viaje",
+      "key_etapa"
+    ],
+    "candidate_status": "name_based_candidates_only; uniqueness_and_scope_not_tested",
+    "columns": [
+      {
+        "source_name": "cod_eta",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_pers",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "nom_mun_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_upl_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "cod_utam_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "zat_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "estra_hg",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "orden_eta",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "etapas",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modo_etapa",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modo_principal_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "uso_veh_hg_cod",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_acceso_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_espera_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "pago_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "costo_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "modalidad_pago_vj",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "lugar_parqueo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_parqueo_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "costo_parqueo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "t_egreso_min",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "motivo_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "edad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "sexo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "genero",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "orien_sexual",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "identidad_etnica",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "mad_cab_familia",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "max_nivel_educativo",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "ocupación_principal",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "actividad_economica",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "condicion_discapacidad",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "licencia_vigente",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_viaje",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "key_etapa",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      },
+      {
+        "source_name": "fexp_eta",
+        "documented_definition": null,
+        "definition_status": "pending_document_review"
+      }
+    ],
+    "structural_anomalies": {
+      "empty_header_positions": [],
+      "whitespace_header_names": [],
+      "duplicate_headers": []
+    }
+  }
+]

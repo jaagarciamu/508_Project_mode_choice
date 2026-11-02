@@ -1,0 +1,7 @@
+﻿decision_id,topic,evidence_needed
+PENDING-01,Trip eligibility,Map the official trip reference population and valid/complete EODH records to the released viajes table; specify treatment of unclassified and missing fields.
+PENDING-02,Trip expansion factor,Find the field-level definition and operational derivation of fexp_vj; verify it is the final model-based trip expansion factor and identify its valid universe.
+PENDING-03,ZAT geography,"Verify zat_ori and zat_des code domains and the crosswalk to the authoritative EODH study-area ZAT geography, including outside and unresolved codes."
+PENDING-04,Mode dimension,Confirm the published definition and domains of modo_principal_agrupado and treatment of missing or unclassified mode.
+PENDING-05,Matrix uncertainty,Locate the reproducible variance or simulation method used for model-based EODH expansion and determine whether its inputs/replicates support uncertainty estimates by OD and mode cell.
+PENDING-06,Published benchmark comparability,"Establish whether the 16,723,044 daily trip benchmark uses the same record eligibility, geographic coverage, intrazonal treatment, and mode aggregation as the proposed matrix."

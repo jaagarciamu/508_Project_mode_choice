@@ -1,0 +1,7 @@
+﻿child_table,child_fields_json,parent_table,parent_fields_json,child_row_count,foreign_key_violation_count,validation_status,status_note
+vehiculos,"[""cod_hog"", ""key_hg""]",hogares,"[""cod_hog"", ""key_hg""]",17392,0,empirically_validated,Exact values and paired identifiers were checked; source-field semantics remain documented separately.
+personas,"[""cod_hg"", ""key_hg""]",hogares,"[""cod_hog"", ""key_hg""]",67556,0,empirically_validated,Exact values and paired identifiers were checked; source-field semantics remain documented separately.
+viajes,"[""cod_hg"", ""key_hg""]",hogares,"[""cod_hog"", ""key_hg""]",100174,0,empirically_validated,Exact values and paired identifiers were checked; source-field semantics remain documented separately.
+viajes,"[""cod_pers"", ""key_pers""]",personas,"[""cod_per"", ""key_persona""]",100174,0,empirically_validated,Exact values and paired identifiers were checked; source-field semantics remain documented separately.
+etapas,"[""cod_vj"", ""key_viaje""]",viajes,"[""cod_vj"", ""key_viaje""]",110881,0,empirically_validated,Exact values and paired identifiers were checked; source-field semantics remain documented separately.
+etapas,"[""cod_pers""]",personas,"[""cod_per""]",110881,0,empirically_validated,Exact values and paired identifiers were checked; source-field semantics remain documented separately.

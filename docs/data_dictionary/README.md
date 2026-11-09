@@ -1,30 +1,15 @@
-﻿# Data Dictionary and Source Catalog
+# Diccionario, catálogo y auditoría de datos
 
-The data dictionary is built progressively from source headers and official EM2023 documentation. Do not invent variable meanings. Record source names, documented definitions, observed storage characteristics, missingness, constraints, and provenance. Unverified definitions remain explicitly pending.
+Los archivos de este directorio registran nombres y estructuras de las fuentes, definiciones documentadas, características observadas, relaciones empíricas y limitaciones. No se infieren significados de variables ni se corrigen datos fuente.
 
-`01_source_inventory.ipynb` regenerates `source_inventory.csv` and `source_schema.json`. It reads file metadata and CSV headers, not microdata rows.
+`notebooks/01_data_audit.ipynb` regenera el inventario y esquema a partir de la estructura de `data/sources/raw/`, las auditorías agregadas de calidad y los reportes de validación de claves/relaciones. También verifica la SQLite existente en modo de solo lectura; no reconstruye la base.
 
-`02_data_quality_audit.ipynb` generates `data_quality_audit_tables.csv` and `data_quality_audit_columns.csv`. These reports contain aggregate metrics only; they do not contain row values or duplicate fingerprints.
+`notebooks/02_daily_od_matrices.ipynb` genera las matrices diarias y reportes de Level 1. Los registros OD con códigos no vacíos se cuentan usando los valores de zona fuente sin normalizarlos. Los códigos sin clasificación geográfica permanecen en la matriz.
 
-`03_relational_model.ipynb` generates `relational_candidate_audit.csv` and `relational_relationship_audit.csv`. Empirical uniqueness and coverage do not establish the documented meaning of a field.
+`notebooks/03_mode_choice_data_audit.ipynb` valida relaciones y cobertura de las cinco tablas relacionales y genera perfiles y un diccionario separado para la preparación de elección modal. El diccionario lista categorías con frecuencias para campos de baja cardinalidad; en campos de alta cardinalidad conserva el resumen. Las definiciones permanecen pendientes cuando no se localizaron en la documentación. La auditoría no construye todavía una base enriquecida ni agrega campos de etapas al viaje.
 
-`04_cleaning_and_standardization.ipynb` performs technical readiness checks only. No source values or column names are transformed in this stage.
+`notebooks/04_mode_choice_join_preview.ipynb` genera una muestra local de hasta tres viajes por modo observado para inspeccionar cómo se unen persona y hogar y cómo se podrían resumir las relaciones uno a muchos. La muestra contiene microdatos e identificadores, está excluida de Git y no es representativa. Los agregados exploratorios de etapas y vehículos no son reglas finales para la base de modelado.
 
-`05_relational_data_layer.ipynb` builds and validates the local SQLite layer. Its table and relationship reports contain aggregate results; the SQLite database is local and excluded from Git.
+`source_review.md`, `eodh_methodology_evidence.csv` y `eodh_matrix_open_decisions.csv` resumen la evidencia de Etapa IV, las decisiones operativas y las limitaciones no bloqueantes. Los informes de Etapa IV son evidencia metodológica contextual; las bases de datos entregadas son la fuente de valores observados.
 
-`06_analytical_dataset_design.ipynb` builds `data/analytical/em2023_trip_dataset.csv` with one row per `viajes` record, preserving all source fields and values as text. `analytical_trip_dataset_fields.csv` documents source lineage and provisional analytical roles. The trip expansion factor is retained but not applied. The notebook documents the OD matrix design but does not generate weighted OD counts before survey-weight and ZAT rules are validated.
-
-`07_level1_source_audit.ipynb` refreshes the full local source inventory and creates `eodi_workbook_catalog.csv` and `eodi_field_dictionary.csv`. These contain file/sheet metadata, EODI field headers, and source dictionary text; the workbook observation rows are not read. The blank first EODI `BD` header remains unassigned pending validation.
-
-Level 1 treats EODH and EODI as separate survey operations. EODH is the primary observed travel matrix source. EODI factors and traffic counts are not EODH weights. A Stage V-inspired hybrid matrix is a separate future product and requires review of compatible modes, periods, geography, units, and double-count rules before construction.
-
-`08_eodh_methodology_audit.ipynb` records the documented EODH population, units, trip reference period, model-based weighting approach, and published aggregate benchmarks. It generates `eodh_methodology_evidence.csv` and `eodh_matrix_open_decisions.csv`. It reads documentation and metadata only; it does not read microdata rows or construct matrices.
-
-The first EODH matrix release is planned to contain a daily OD matrix aggregated across modes and separate daily OD matrices by the source main-mode grouping. Sample counts and expanded totals are distinct products. Expansion and uncertainty estimates remain gated on validation of `fexp_vj`, the eligible trip universe, zone correspondence, and the documented model-based variance procedure.
-
-
-`10_od_matrix.ipynb` is the consolidated operational notebook for the Level 1 EODH OD product. It generates sparse, sample-count daily OD tables (complete and by the exact source main-mode category) under `data/analytical/od_matrices/`. The in-scope geography is defined from ZAT2023 municipality attributes for Bogota and the 20 EODH study municipalities; external and gateway zones remain in an aggregate endpoint-pair reconciliation. Intrazonal trips are retained.
-
-The current release contains 99,741 source trip records with both endpoints in the ZAT study area from 100,174 source trip records. The other 433 records are retained in the geographic reconciliation because at least one endpoint is an external or gateway zone. The sample matrices reconcile exactly, including all 15,013 intrazonal trips. These values are regenerated by the notebook and are not hard-coded into the builder. The official EM2023 release page is catalogued in the product manifest and was reviewed on 2026-11-02; its downloadable database/dictionary archives were not retrievable through the available review tool, so field-level weight validation remains open.
-
-No expanded matrices or uncertainty estimates are released. The methodology documents a doubly robust model-based estimator, but the reviewed material does not establish the operational field-level definition and eligible universe for `fexp_vj`, nor a reproducible variance method for OD-by-mode cells. The factor diagnostic reports aggregate parsing and missingness metrics; its sum is explicitly not an estimate. EODI and Stage V remain separate and do not adjust this EODH product.
+Los notebooks previos a este flujo se preservan bajo `notebooks/archive/` como referencia histórica. Los informes CSV contienen métricas agregadas y no valores de microdatos ni identificadores individuales.

@@ -1,68 +1,38 @@
-# EM2023 Source and Documentation Review
+# Revisión de fuentes EM2023 y decisiones de uso
 
-**Status:** Initial document review completed; the field-by-field dictionary remains in progress.  
-**Authority:** Official EM2023 materials define the survey. Contract 2022-1972 deliverables provide methodological context.  
-**Microdata scope:** Document review is separated from row-level analysis; all derived findings are reported as aggregates.
+**Estado:** revisión documental de Etapa IV incorporada; el campo por campo y la reproducción de los scripts contractuales siguen fuera del alcance.
+**Datos observados:** CSV locales EM2023 en `data/sources/raw/Database/`, conservados sin modificar.
+**Jerarquía:** los documentos técnicos oficiales EM2023 definen la encuesta; los entregables del contrato 2022-1972 documentan procesos y resultados. El código de análisis contractual no se presupone disponible.
 
-## Official EM2023 materials
+## Hallazgos de Etapa IV
 
-- The technical survey sheet documents design and sample coverage. Use it to establish the analytical universe and review expansion weights; it is not a field-level codebook.
-- The household and travel questionnaires describe instrument modules and concepts. A questionnaire item does not establish a one-to-one mapping to a CSV column without explicit evidence.
-- The EM2023 cartilla is useful for context and published results, but does not establish microdata keys or column definitions.
-- Technical coverage and output workbooks provide comparison references for later universe and weighting checks.
+- **P4 — validación y georreferenciación EODH:** el informe describe la aplicación de criterios MIC a 23.082 encuestas; 22.755 hogares quedaron válidos, 187 incompletos y 140 anulados. La base final ya pasó el proceso de validación y edición documentado; este proyecto no intenta reconstruir MIC sin formularios, mallas y registros originales.
+- P4 reporta 56.240 registros en el producto georreferenciado y una base final de 100.174 viajes. La diferencia se conserva como discrepancia entre productos; el subconjunto georreferenciado no se usa como filtro ni como universo de la matriz.
+- **P5 — bases finales EODH:** documenta 22.755 hogares, 67.556 personas, 48.539 personas con viajes, 100.174 viajes y 122.992 etapas. Describe la estructura hogar–personas/vehículos/viajes y viajes–etapas, y refiere una base final con y sin factores, diccionario y cuadros de salida.
+- **P6 — expansión EODH:** el total de viajes por hogar se calcula con el factor de expansión del hogar multiplicado por los viajes reportados por ese hogar: `T = sum_h(fexp_hg * viajes_h)`. El informe reporta 16.723.044 viajes diarios, margen de error 446.648, CV 1,36% e intervalo 16.276.395–17.169.692.
+- P6 también refiere rutinas R e insumos en un anexo. No se localizaron esos archivos entre los materiales locales catalogados, por lo que no se afirma reproducción exacta ni se bloquea una reconstrucción técnica con los campos disponibles.
+- P6 página impresa 22 reporta 64.989 personas en el contexto de expansión; P4/P5 reportan 67.556 personas en la base final. La diferencia de denominador no está reconciliada en los archivos disponibles y no se usa para filtrar viajes.
 
-## Contract 2022-1972 materials
+## Factores de expansión: verificación empírica local
 
-- Stage II Annex 3 provides recommendations about study area, sample design, and questionnaire structure. Annex 4 organizes topics and variables of interest, including mobility, modes, persons, households, and stages. Its thematic codes are not definitions of the source CSV column names.
-- The 2019 sample-distribution workbook is historical context and must not be treated as the EM2023 sample specification.
-- The Stage IV final report documents fieldwork, validation, and EODI georeferencing context. It does not define the source identifiers `cod_pers` or `key_pers`.
-- The Stage V OD-matrix methodology describes EODI processing, ZAT assignment, expansion, period and mode stratification, and double-count review. It is relevant to Level 1 OD matrices, not a direct specification for the relational layer or a discrete mode-choice dataset.
-- Other Stage V four-step model and assignment deliverables provide network-model context. They do not define the observed survey tables.
-- Stage VI copies of the EM2023 technical survey sheet and indicator-estimation report are byte-identical to files already catalogued in the technical-documentation and documentation folders. Treat them as duplicate copies, not independent evidence.
-- Communication plans and communication-compliance reports are not needed for current data engineering.
+La SQLite local contiene `fexp_hg` en `hogares` y `fexp_vj` en `viajes`, relacionadas mediante `key_hg`. En los 100.174 viajes, ambos campos son no vacíos, numéricos y positivos; cada uno es constante dentro de los 21.508 hogares con viajes. Sin embargo, no coinciden en 90.194 filas. Sus sumas repetidas por registro de viaje son 16.723.042,90 para `fexp_hg` y 16.723.043,30 para `fexp_vj`.
 
-## Source structure and observed identifiers
+El pipeline usa `fexp_hg` por viaje porque coincide con la fórmula de total de viajes por hogar descrita en P6. `fexp_vj` se conserva y se reporta como contraste. La diferencia registro a registro permanece visible; la cercanía de ambos totales al benchmark no demuestra que los factores sean intercambiables, que su derivación sea igual ni que el procedimiento oficial se haya replicado. No se altera ni recalibra ningún factor.
 
-- The five source CSV files are semicolon-delimited. Their encodings and exact headers are recorded in `source_schema.json` and regenerated by `01_source_inventory.ipynb`.
-- The vehicle CSV has an empty final header; the travel CSV retains surrounding spaces in two source column names. Preserve both conditions in source-faithful storage.
-- Candidate identifiers are empirical signals, not official definitions. The audit and relational-validation notebooks report uniqueness and coverage; semantic interpretation remains dependent on documentation.
-- `cod_pers` and `key_pers` are distinct text identifiers. Aggregate row-level checks found one-to-one paired correspondence between them in travel records and exact pair coverage in the persons table. The available reviewed documents do not define how either identifier is constructed; preserve both as text.
+## Geografía y códigos de zona
 
-## Use in subsequent work
+La matriz usa los campos originales `zat_ori` y `zat_des` como texto; solo los valores nulos o vacíos impiden asignar una celda. Se conservan los demás códigos tal como aparecen, incluidos los que no tengan clasificación confirmada, y no se crea una equivalencia con UTAM, ZAT de otro año, municipio u otra geografía.
 
-1. Use the source inventory and schema as the current file and header catalog.
-2. Use official EM2023 materials for survey meanings, questionnaire definitions, universe, and weights.
-3. Use contract deliverables as contextual methodology only; verify any operational rule against the official EM2023 sources and observed data.
-4. Map Annex 4 topics to source columns only after documenting the correspondence.
-5. Reserve the Stage V OD methodology for the Level 1 OD workflow.
+En el DBF ZAT2023 los códigos se leen como números decimales, mientras que los códigos de viaje son cadenas de texto (por ejemplo, la representación numérica del DBF incluye `.0`). Como la unión exigiría coerción de representación y no se dispone de una regla oficial de crosswalk para este producto, la geografía no filtra ni renombra zonas. Las diferencias de representación y códigos no clasificados se documentan en QA.
 
-## Level 1 source contract (initial structural review)
+La versión OD anterior aplicaba una clasificación geográfica y contaba 99.741 viajes internos, incluidos 15.013 intrazonales. El flujo vigente incluye los 433 registros restantes usando sus códigos originales y cuenta 15.016 intrazonales en el universo ampliado. Los tres intrazonales adicionales están fuera del universo interno anterior. Estas cifras describen el cambio de alcance, no una corrección de los datos.
 
-- The EODI files are catalogued separately by role: technical documentation, survey instruments, traffic counts and associated spatial references, and intercept-survey data. `source_inventory.csv` records paths, formats, sizes, and available structural metadata.
-- `07_level1_source_audit.ipynb` records sheet names and dimensions for the EODI intercept-survey and traffic-count workbooks, the exact `BD` field headers, and the source-provided `DICC` definitions. It does not inspect observation rows. The first `BD` header is blank; `ID` is a documented candidate only and must not be assigned without empirical validation.
-- The EODI dictionary describes `fexp_sin DC` as a weighting factor. The field name and workbook title do not by themselves validate its universe, numeric integrity, or double-count treatment.
-- The traffic-count workbook documents peak-hour traffic volume. Its unit and compatibility with EODI survey counts must be established before using counts for expansion diagnostics. It is never an EODH expansion factor.
-- EODI ZAT values and the EM2023 EODH ZAT geography require an explicit code and coverage reconciliation. No direct geographic join is assumed.
-- EODH remains the primary source for the observed household travel OD product. The Stage V-inspired hybrid is a distinct, future reference product and must not be used to overwrite or calibrate EODH automatically.
-- This structural catalog is the first review gate. No OD matrix, factor audit, count comparison, or spatial join is produced at this stage.
+## Producto vigente de matrices OD
 
-## EODH matrix methodology review
+`notebooks/02_daily_od_matrices.ipynb` genera una matriz diaria muestral y una matriz expandida reconstruida técnicamente, ambas dispersas en formato largo. La unidad muestral es el registro de viaje; se incluye cada fila con origen y destino no vacíos, se conserva la intrazonalidad y no se aplican filtros por modo, propósito, edad u otros atributos. No se producen matrices por modo ni períodos AM/PM.
 
-- The official EODH technical sheet (pp. 20–21) defines the population as private households with residents aged five or older in urban and rural Bogotá and urban areas of 20 neighboring municipalities. It identifies persons as the observation units, households/persons/socioeconomic level/UTAM as analysis units, and an average group of about ten dwellings as the sampling unit.
-- The technical sheet describes a doubly robust model-based estimator that integrates EODH 2019 and calibrates to 2023 household and person projections. It reports fieldwork adjustments and selection/inclusion bias as reasons that inference based only on the originally planned sample design was not adequate. Therefore, `fexp_vj` must not be treated as a conventional design weight without verifying its operational definition.
-- The Stage IV report specifies that travel records refer to the previous non-holiday weekday (Monday through Friday). Its final database reports 100,174 trips and the published estimate of 16,723,044 daily trips, with estimated CV 1.36% (pp. 127–128). The latter is a benchmark only after matching universe, eligibility, geography, and aggregation rules.
-- The current schema records `zat_ori`, `zat_des`, `modo_principal_agrupado`, and `fexp_vj`, but does not document the field-level derivation of the factor. The model-based variance or simulation procedure and its inputs for OD-by-mode cells also remain to be located and assessed.
-- `08_eodh_methodology_audit.ipynb` records this evidence and the open decisions without reading microdata. The planned sample products are a complete daily OD matrix aggregated over modes plus separate daily matrices by the source main-mode grouping. Expanded products and uncertainty estimates remain gated on the factor, trip universe, zone mapping, and model-based inference method.
-- This EODH workstream does not use EODI weights or aforos. The Stage V-inspired EODI/EODH hybrid remains a separate later product.
+La matriz expandida repite `fexp_hg` del hogar para cada viaje asociado. Las celdas conservan el mismo conjunto de pares OD de la muestra. Si para una celda no hay cobertura completa de factor válido, su estimación queda vacía y la pérdida de cobertura aparece en los reportes, no como cero.
 
+El benchmark de 16.723.044 se usa solo como contraste descriptivo. La matriz expandida local suma 16.723.042,90 (diferencia -1,10; aproximadamente -0,0000066%). No se fuerza concordancia ni se interpreta como éxito de reproducción. No se estiman errores estándar, intervalos o CV por celda; el CV publicado del total no se aplica a celdas OD.
 
-## EODH sample OD product
-
-`10_od_matrix.ipynb` is the single operational notebook for the first EODH matrix release. It uses `viajes` from the read-only validated SQLite database and checks endpoint codes against the ZAT2023 DBF attributes. Scope is determined from the municipal codes for Bogota and the 20 municipalities in the EODH study population; mapped zones with other municipality codes (including gateway zones) are not silently included in the zonal matrix. They are summarized by origin-destination endpoint status. The municipality name stored on a trip is supporting survey text and is not used as the zone crosswalk.
-
-The complete sample matrix counts all trips with two in-scope ZAT endpoints, regardless of mode; mode-specific tables preserve the source mode category. Intrazonal observations remain included. The current generated release has 99,741 source trip records with both endpoints in scope and 15,013 intrazonal trips, with 433 source trips outside the in-scope endpoint pair universe. No additional trip-record eligibility filter is applied. These are sample counts, not population estimates.
-
-`fexp_vj` remains unapplied. Available official material supports the survey-level model-based doubly robust approach but does not provide enough evidence to certify that this specific field is the final operational trip expansion factor, define its valid record universe, or reproduce OD-by-mode uncertainty. No expanded OD matrix or confidence interval is released until those matters are resolved. EODI factors and traffic counts are not used.
-
-
-The official EM2023 release page was reviewed on 2026-11-02: https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023. The page lists the processed EODH database and raw-data dictionary downloads. The ZIP files could not be retrieved by the available review tool, and those packages are not established as locally available; this is why `fexp_vj` remains unvalidated at field level and no expanded product is published.
+Las fuentes EODI, sus factores, aforos y metodología de Etapa V son líneas distintas y no se usan para ajustar el producto EODH.

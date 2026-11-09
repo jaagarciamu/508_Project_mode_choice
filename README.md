@@ -1,54 +1,61 @@
 # Mode Choice Bogotá — EM2023
 
-Proyecto académico de CME 508 para estudiar la demanda observada de viajes en Bogotá y, posteriormente, la elección modal. El trabajo se desarrolla por niveles: **Level 0** establece la base de datos y su entendimiento; **Level 1** estudia la demanda observada y matrices origen-destino (OD); **Level 2** aborda la elección modal.
+Proyecto académico de CME 508 sobre la demanda observada de viajes en Bogotá y la elección modal. El flujo usa las fuentes locales EM2023 y produce bases consolidadas y productos analíticos reproducibles. El objetivo principal es estudiar la elección modal; las matrices diarias OD son una etapa descriptiva intermedia.
 
-## Estado y alcance actual
+## Estado del proyecto
 
-El repositorio contiene fuentes locales EM2023 en `data/sources/raw/`. Esta carpeta y su estructura existente se conservan sin modificar. En particular, `data/sources/raw/Database/` contiene los CSV fuente. No se versionan ni se deben subir datos fuente o microdatos. Task 01 y el inventario de metadatos de Task 02 están establecidos. El inventario no lee filas de microdatos ni realiza auditoría de calidad, uniones, matrices OD o modelos.
+- **Level 0 — bases y auditoría:** el inventario de fuentes, el diccionario, las auditorías agregadas, la SQLite relacional y el dataset de viajes están disponibles localmente. Las fuentes originales no se modifican ni se versionan.
+- **Level 1 — matrices OD:** se generan una matriz diaria muestral y una expandida técnicamente con el factor de hogar `fexp_hg`, siguiendo la forma documentada en Etapa IV de sumar el factor del hogar por cada viaje reportado. `fexp_vj` se conserva como contraste porque difiere del factor del hogar en 90.194 de 100.174 registros.
+- La matriz actual incluye los 100.174 viajes con origen y destino no vacíos, códigos originales y viajes intrazonales. La versión histórica limitada al área interna incluía 99.741 viajes y 15.013 intrazonales; la versión ampliada incluye 433 registros adicionales y 15.016 intrazonales.
+- El total expandido local con `fexp_hg` es 16.723.042,90, una diferencia de -1,10 respecto al total publicado de 16.723.044. Esta proximidad es solo un contraste descriptivo: no valida equivalencia de factores, universos o procedimientos ni constituye reproducción oficial.
+- No se normalizan códigos para forzar emparejamientos geográficos. Los códigos quedan como texto original; las referencias que no coinciden exactamente se documentan como no clasificadas y permanecen en las matrices.
+- No se calculan medidas de incertidumbre por celda, matrices por modo ni matrices AM/PM. Esas decisiones exceden el producto OD diario actual.
+- **Level 2 — auditoría para elección modal:** se perfilarán relaciones, cobertura, variables y categorías de las cinco tablas antes de construir una base enriquecida por viaje. No se imputan alternativas no observadas ni se estiman modelos en esta etapa.
 
-## Requisitos y entorno (Windows)
+## Entorno (Windows)
 
-Se usa Python 3.12 y [uv](https://docs.astral.sh/uv/). Desde Git Bash, en la raíz del repositorio:
+Se usa Python 3.12 y [uv](https://docs.astral.sh/uv/). Desde la raíz del repositorio:
 
 ```bash
 uv python install 3.12
-uv sync --extra source-docs
+uv sync --extra source-docs --extra geospatial
 uv run python -m ipykernel install --user --name mode-choice-bogota --display-name "Python (Mode Choice Bogotá)"
 uv run jupyter lab
 ```
 
-`uv sync --extra source-docs` crea `.venv` e instala los lectores opcionales de Excel y PDF usados por el inventario de fuentes; las dependencias quedan fijadas en `uv.lock`. En VS Code, abrir la carpeta del proyecto, abrir un notebook, seleccionar **Select Kernel** y elegir **Python (Mode Choice Bogotá)** o el intérprete `.venv\Scripts\python.exe`. La instalación del kernel de usuario es opcional si VS Code detecta directamente `.venv`.
+`uv.lock` fija las dependencias, incluido `pyarrow` para los productos Parquet. En VS Code se puede elegir el kernel **Python (Mode Choice Bogotá)** o `.venv\Scripts\python.exe`.
 
-## Datos y gobernanza
+## Flujo principal
 
-- Mantener los archivos originales en `data/sources/raw/`; no renombrarlos, modificarlos ni moverlos.
-- La ruta principal de las tablas es `data/sources/raw/Database/`. Los nombres y relaciones deben validarse con los propios datos y documentación.
-- No subir datos fuente, microdatos ni derivados sensibles a Git. `.gitignore` excluye datos locales, pero no sustituye controles de acceso ni revisión antes de compartir.
-- Los productos relacionales, intermedios y analíticos son distintos de las fuentes y deben documentar procedencia, transformaciones, unidad de observación y limitaciones.
+1. `notebooks/01_data_audit.ipynb` — refrescar el inventario y ejecutar auditorías agregadas; inspeccionar la base relacional existente en solo lectura. No reconstruye la SQLite.
+2. `notebooks/02_daily_od_matrices.ipynb` — generar matrices diarias muestral y expandida, conciliación, QA, resumen por zona e informe metodológico.
+3. `notebooks/03_mode_choice_data_audit.ipynb` — auditoría de relaciones, perfiles de campos y categorías; produce un diccionario analítico y reportes agregados. No construye todavía la base enriquecida.
+4. `notebooks/04_mode_choice_join_preview.ipynb` — muestra local de hasta tres viajes por modo para revisar la unión persona/hogar y los resúmenes exploratorios de vehículos/etapas. No es representativa ni una regla final.
+5. `notebooks/05_mode_choice_analysis.ipynb` — fase futura para consolidar la base analítica por viaje y desarrollar el análisis modal, una vez acordadas las reglas de agregación y alcance.
 
-## Arquitectura
+Los notebooks previos se conservan en `notebooks/archive/` como registro de análisis y no forman parte del flujo principal vigente.
 
-- `notebooks/`: documentos de investigación ejecutables, con contexto, método, resultados y limitaciones.
-- `src/mode_choice/`: lógica reutilizable solo cuando aporte valor.
-- `sql/`: consultas reutilizables cuando SQL sea adecuado.
-- `configs/`: configuración portable y relativa al proyecto; decisiones aún no validadas se marcan como pendientes.
-- `data/relational/`, `data/interim/`, `data/analytical/`: capas locales derivadas; no contienen fuentes originales.
-- `docs/`: decisiones, modelo, diccionario y metodología.
+## Bases y productos
 
-## Orden de notebooks
+- `data/relational/em2023_relational.sqlite`: cinco tablas fuente consolidadas y relaciones validadas. Es una base local y está excluida de Git.
+- `data/analytical/em2023_trip_dataset.csv`: una fila por viaje, con los campos de `viajes` preservados tal como se almacenan; `fexp_vj` se conserva sin aplicar.
+- `data/interim/mode_choice_trip_join_preview.csv`: muestra local de revisión con microdatos e identificadores; excluida de Git y no apta para publicación.
+- `outputs/matrices/`: matrices OD diaria en CSV y Parquet, dispersas y en formato largo.
+- `outputs/tables/`: conciliación, calidad de datos y resumen de zonas.
+- `outputs/reports/`: metodología, supuestos y limitaciones.
+- `docs/data_dictionary/mode_choice_trip_dataset_fields.csv`: diccionario de campos de las tablas relacionales, definiciones pendientes y perfiles observados.
 
-1. `00_project_setup.ipynb` — verificar raíz y configuración, sin leer microdatos.
-2. `01_source_inventory.ipynb` — inventariar fuentes y documentación.
-3. `02_data_quality_audit.ipynb` — revisar calidad y posibles claves.
-4. `03_relational_model.ipynb` — validar relaciones y cardinalidades.
-5. `04_cleaning_and_standardization.ipynb` — documentar y aplicar transformaciones aprobadas.
-6. `05_relational_data_layer.ipynb` — construir la capa relacional validada.
-7. `06_analytical_dataset_design.ipynb` — definir conjuntos por pregunta de investigación.
+Los productos generados locales se excluyen de Git por defecto. Los agregados no contienen identificadores de viaje, hogar o persona.
 
-El notebook 01 genera el catálogo y esquema preliminar; las definiciones de columnas, claves, cardinalidades y tipos observados siguen pendientes de validación. Los notebooks 02–06 requieren los pasos empíricos anteriores antes de producir resultados. La etapa posterior Level 1 empieza con `10_od_matrix.ipynb`; Level 2 con `20_mode_choice_dataset.ipynb`.
+## Reglas de datos y metodología
 
-## Reproducibilidad y siguientes pasos
+- Mantener los archivos originales en `data/sources/raw/` sin renombrarlos, modificarlos ni moverlos.
+- Usar `viajes` como unidad de conteo para la matriz muestral. Incluir todo registro con códigos OD no vacíos, sin filtros por modo, propósito u otros atributos; retener intrazonales.
+- Para la estimación expandida, repetir el `fexp_hg` del hogar por cada viaje asociado mediante `key_hg`, equivalente a sumar por hogar el factor multiplicado por sus viajes. `fexp_vj` se reporta como diagnóstico comparativo.
+- Mantener los códigos de zona sin recodificar. La geografía disponible puede usarse como referencia descriptiva únicamente donde la correspondencia sea verificable; no se descartan zonas por falta de correspondencia.
+- Reportar factores inválidos, registros sin códigos OD, diferencias frente a cifras publicadas y limitaciones. No ajustar pesos ni códigos para forzar acuerdos.
+- Los resultados se describen como matriz muestral y estimación expandida reconstruida técnicamente; no se afirma reproducción exacta del método oficial.
 
-Usar rutas relativas desde la raíz del repo, registrar dependencias en `pyproject.toml` y mantener `uv.lock` actualizado con `uv lock`/`uv sync`. Registrar decisiones en `docs/decisions/decision_log.md`; no inferir relaciones, mapeos geográficos, categorías modales ni reglas de expansión sin evidencia.
+## Documentación y trazabilidad
 
-Siguiente tarea: **Task 03 — Data Quality Audit & Key Validation**, comenzando con el notebook `02_data_quality_audit.ipynb` y los esquemas preliminares generados por Task 02.
+`docs/data_dictionary/` contiene catálogos, esquemas y auditorías agregadas. `docs/data_dictionary/source_review.md` resume la revisión de fuentes EODH/EODI. `docs/decisions/decision_log.md` registra las decisiones de alcance, expansión, geografía y limitaciones. Revisar `git status` antes de compartir el repositorio para asegurar que no se incluyan microdatos o productos locales.

@@ -1,5 +1,6 @@
 # Python environments and caches
 .venv/
+.cache/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -23,6 +24,10 @@ __pycache__/
 !/outputs/tables/README.md
 /outputs/figures/*
 !/outputs/figures/README.md
+/outputs/matrices/*
+!/outputs/matrices/README.md
+/outputs/reports/*
+!/outputs/reports/README.md
 
 # Local environment and secrets
 .env

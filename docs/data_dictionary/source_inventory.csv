@@ -5,6 +5,15 @@ data/sources/raw/contrato 2022-1972/Etapa II/ANEXO 3_RECOMENDACIONES METODOLÓGI
 data/sources/raw/contrato 2022-1972/Etapa II/ANEXO 4_TEMÁTICAS Y VARIABLES DE INTERÉS ENCUESTA MOVILIDAD 2023.xlsx,contract_context,xlsx,593608,,,,,,,,"[{""name"": ""PORTADA"", ""max_row"": 64, ""max_column"": 15}, {""name"": ""INFO"", ""max_row"": 34, ""max_column"": 12}, {""name"": ""1.SOCIOECONÓMICOS"", ""max_row"": 24, ""max_column"": 6}, {""name"": ""2.MOVILIDAD"", ""max_row"": 56, ""max_column"": 6}, {""name"": ""3.USUARIOS"", ""max_row"": 27, ""max_column"": 6}, {""name"": ""4.TRÁNSITO"", ""max_row"": 37, ""max_column"": 6}, {""name"": ""5.CUIDADO"", ""max_row"": 28, ""max_column"": 6}, {""name"": ""6.GÉNERO"", ""max_row"": 71, ""max_column"": 6}, {""name"": ""7.ALTERNATIVOS"", ""max_row"": 49, ""max_column"": 6}, {""name"": ""8.COVID-19"", ""max_row"": 17, ""max_column"": 6}]",,,ok
 data/sources/raw/contrato 2022-1972/Etapa III/Etapa III final.  Diseño de metodologia para el trabajo de campo EODH/3.12. EODH 05 INFORME DE CUMPLIMIENTO PLAN DE COMUNICACIONES_ajustada_11052023.pdf,contract_context,pdf,368563,,,,,,,,,,18,ok
 data/sources/raw/contrato 2022-1972/Etapa III/Etapa III final.  Diseño de metodologia para el trabajo de campo EODI/3.17. EODI 05 INFORME DE CUMPLIMIENTO PLAN DE COMUNICACIONES_VF_11052023.pdf,contract_context,pdf,305784,,,,,,,,,,17,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P10_CUMPLIMIENTO NTCPE APLICADO A EODI Y EODH.pdf,contract_context,pdf,2765248,,,,,,,,,,96,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P1_PROCESAMIENTO Y GEORREFERENCIACIÓN EODI.pdf,contract_context,pdf,1412428,,,,,,,,,,30,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P2_BASES DE DATOS FINALES EODI.pdf,contract_context,pdf,659374,,,,,,,,,,23,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P3_EXPANSIÓN BASE DE DATOS EODI.pdf,contract_context,pdf,906113,,,,,,,,,,30,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P4_VALIDACIÓN PROCESAMIENTO Y GEORREFERENCIACIÓN EODH.pdf,contract_context,pdf,2508207,,,,,,,,,,52,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P5_BASES DE DATOS FINALES EODH.pdf,contract_context,pdf,762245,,,,,,,,,,23,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P6_EXPANSIÓN INFORMACIÓN EODH.pdf,contract_context,pdf,846452,,,,,,,,,,33,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P7_CUMPLIMIENTO PLAN DE COMUNICACIONES EODH.pdf,contract_context,pdf,1397746,,,,,,,,,,33,ok
+data/sources/raw/contrato 2022-1972/Etapa IV/P8_CUMPLIMIENTO PLAN DE COMUNICACIONES _EODI.pdf,contract_context,pdf,982892,,,,,,,,,,23,ok
 data/sources/raw/contrato 2022-1972/Etapa IV/P9_INFORME FINAL ETAPA IV.pdf,contract_context,pdf,12515433,,,,,,,,,,132,ok
 data/sources/raw/contrato 2022-1972/Etapa V/P1_METODOLOGÍA DE ACTUALIZACIÓN Y CALIBRACIÓN MODELO V3.pdf,contract_context,pdf,4074694,,,,,,,,,,182,ok
 data/sources/raw/contrato 2022-1972/Etapa V/P2_METODOLOGÍA CONSTRUCCIÓN DE MATRICES OD V4.pdf,contract_context,pdf,1647141,,,,,,,,,,66,ok
@@ -70,6 +79,10 @@ data/sources/raw/zonification/UTAM2023.prj,geographic_reference,prj,139,,,,,,,,,
 data/sources/raw/zonification/UTAM2023.qix,geographic_reference,qix,3884,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/UTAM2023.qmd,geographic_reference,qmd,681,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/UTAM2023.shp,geographic_reference,shp,1696112,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/UTAM2023.shp.DESKTOP-9MHIIL6.11484.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/UTAM2023.shp.DESKTOP-9MHIIL6.12284.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/UTAM2023.shp.DESKTOP-9MHIIL6.18968.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/UTAM2023.shp.DESKTOP-9MHIIL6.19552.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/UTAM2023.shx,geographic_reference,shx,1236,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/ZAT2023.cpg,geographic_reference,cpg,5,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/ZAT2023.dbf,geographic_reference,dbf,116834,,,,,,,,,,,file_metadata_only
@@ -77,5 +90,9 @@ data/sources/raw/zonification/ZAT2023.prj,geographic_reference,prj,427,,,,,,,,,,
 data/sources/raw/zonification/ZAT2023.sbn,geographic_reference,sbn,11916,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/ZAT2023.sbx,geographic_reference,sbx,364,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/ZAT2023.shp,geographic_reference,shp,11234444,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/ZAT2023.shp.DESKTOP-9MHIIL6.11484.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/ZAT2023.shp.DESKTOP-9MHIIL6.12284.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/ZAT2023.shp.DESKTOP-9MHIIL6.18968.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
+data/sources/raw/zonification/ZAT2023.shp.DESKTOP-9MHIIL6.19552.21364.sr.lock,geographic_reference,lock,0,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/ZAT2023.shp.xml,geographic_reference,xml,18420,,,,,,,,,,,file_metadata_only
 data/sources/raw/zonification/ZAT2023.shx,geographic_reference,shx,9820,,,,,,,,,,,file_metadata_only

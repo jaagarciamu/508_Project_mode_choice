@@ -1,16 +1,29 @@
 project:
   name: "Mode Choice Bogotá — EM2023"
-  status: "foundation"
-  current_level: 0
+  status: "active"
+  current_level: 1
+  level_0_status: "relational_database_and_trip_dataset_available"
+  level_1_status: "daily_sample_and_technical_expanded_od_products"
+  level_2_status: "next_phase_mode_choice_dataset_and_analysis"
 
 data_governance:
   source_data_immutable: true
   raw_data_git_policy: "local_only"
   raw_data_path: "data/sources/raw"
   database_path: "data/sources/raw/Database"
+  consolidated_database_path: "data/relational/em2023_relational.sqlite"
+  analytical_trip_dataset_path: "data/analytical/em2023_trip_dataset.csv"
 
 methodology:
-  survey_relationships: "pending_empirical_validation"
-  mode_mapping: "pending_documentation_review"
-  zat_mapping: "pending_documentation_review"
-  expansion_factor_use: "pending_documentation_review"
+  trip_unit: "one row per viajes record"
+  daily_od_eligibility: "nonblank original origin and destination zone identifiers"
+  mode_specific_od: false
+  time_period_od: false
+  intrazonal_trips: "included"
+  zone_identifiers: "preserve source text; no inferred crosswalk or geography filter"
+  expansion_primary_factor: "fexp_hg joined by key_hg and repeated per reported trip"
+  expansion_diagnostic_factor: "fexp_vj retained for comparison"
+  expansion_status: "technical reconstruction; not an official methodology reproduction"
+  cell_uncertainty: "not estimated without reproducible variance method"
+  benchmark: 16723044
+  benchmark_role: "descriptive consistency comparison"

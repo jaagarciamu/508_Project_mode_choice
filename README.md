@@ -30,7 +30,7 @@ uv run jupyter lab
 1. `notebooks/01_data_audit.ipynb` — refrescar el inventario y ejecutar auditorías agregadas; inspeccionar la base relacional existente en solo lectura. No reconstruye la SQLite.
 2. `notebooks/02_daily_od_matrices.ipynb` — generar matrices diarias muestral y expandida, conciliación, QA, resumen por zona e informe metodológico.
 3. `notebooks/03_mode_choice_data_audit.ipynb` — auditoría de relaciones, perfiles de campos y categorías; produce un diccionario analítico y reportes agregados. No construye todavía la base enriquecida.
-4. `notebooks/04_mode_choice_join_preview.ipynb` — muestra local de hasta tres viajes por modo para revisar la unión persona/hogar y los resúmenes exploratorios de vehículos/etapas. No es representativa ni una regla final.
+4. `notebooks/04_mode_choice_join_preview.ipynb` — genera `data/interim/mode_choice_trip_join_preview_350.csv`, muestra local de 350 viajes proporcional por modo para revisar la unión persona/hogar y distancia entre centroides ZAT; resúmenes de vehículos/etapas siguen exploratorios.
 5. `notebooks/05_mode_choice_analysis.ipynb` — fase futura para consolidar la base analítica por viaje y desarrollar el análisis modal, una vez acordadas las reglas de agregación y alcance.
 
 Los notebooks previos se conservan en `notebooks/archive/` como registro de análisis y no forman parte del flujo principal vigente.
@@ -39,7 +39,7 @@ Los notebooks previos se conservan en `notebooks/archive/` como registro de aná
 
 - `data/relational/em2023_relational.sqlite`: cinco tablas fuente consolidadas y relaciones validadas. Es una base local y está excluida de Git.
 - `data/analytical/em2023_trip_dataset.csv`: una fila por viaje, con los campos de `viajes` preservados tal como se almacenan; `fexp_vj` se conserva sin aplicar.
-- `data/interim/mode_choice_trip_join_preview.csv`: muestra local de revisión con microdatos e identificadores; excluida de Git y no apta para publicación.
+- `data/interim/mode_choice_trip_join_preview_350.csv`: muestra local de revisión de 350 viajes con microdatos e identificadores; excluida de Git y no apta para publicación. El CSV sin sufijo `_350` es la muestra histórica de 33 viajes.
 - `outputs/matrices/`: matrices OD diaria en CSV y Parquet, dispersas y en formato largo.
 - `outputs/tables/`: conciliación, calidad de datos y resumen de zonas.
 - `outputs/reports/`: metodología, supuestos y limitaciones.

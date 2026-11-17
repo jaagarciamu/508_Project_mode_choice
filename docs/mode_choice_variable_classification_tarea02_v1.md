@@ -1,0 +1,135 @@
+# Investigator-supplied mode choice variable classification
+
+This file records the 126-column classification supplied for Task 02. The tab-separated source table is preserved verbatim below; roles and initial inclusion decisions are not inferred or rewritten. This classification supersedes earlier preview review flags for the analytical dataset build. The preview-only `zat_distance_status` field is a quality-control diagnostic and is not part of this classification.
+
+The `No_Repeated` label is retained exactly as supplied. Its associated `Pending_duplicate_validation` decision requires the comparison matrix before inclusion is finalized.
+
+```tsv
+COLUMNA	TIPO	Possible research_role	Decision Base Inicial
+cod_hg	viaje	No_Inicially	NO
+nom_mun_hg	viaje	No_Inicially	NO
+cod_upl_hg	viaje	No_Inicially	NO
+cod_utam_hg	viaje	No_Inicially	NO
+zat_hg	viaje	No_Inicially	NO
+estra_hg	viaje	core_predictor	SI
+cod_pers	viaje	No_Inicially	NO
+cod_vj	viaje	No_Inicially	NO
+orden_vj	viaje	No_Inicially	NO
+otro_vj	viaje	No_Inicially	NO
+zat_ori	viaje	geographic_segmentation	SI
+utam_ori	viaje	No_Inicially	NO
+upl_ori	viaje	No_Inicially	NO
+localidad_ori	viaje	geographic_segmentation	SI
+nom_mun_ori	viaje	No_Inicially	NO
+zat_des	viaje	geographic_segmentation	SI
+utam_des	viaje	No_Inicially	NO
+upl_des	viaje	No_Inicially	NO
+localidad_des	viaje	geographic_segmentation	SI
+nom_mun_des	viaje	No_Inicially	NO
+ hora_ini 	viaje	core_predictor	SI
+hora_fin	viaje	extended_predictor	SI
+ duracion_min 	viaje	core_predictor	SI
+t_acceso_min	viaje	extended_predictor	SI
+t_espera_min	viaje	extended_predictor	SI
+t_egreso_min	viaje	extended_predictor	SI
+modo_principal_agrupado	viaje	target	SI
+modo_principal_desagrupado	viaje	target	SI
+motivo_viaje	viaje	core_predictor	SI
+motivo_viaje_cuidado	viaje	No_Inicially	NO
+frecuencia_viaje	viaje	extended_predictor	SI
+etapas	viaje	No_Inicially	NO
+app_antes_vj	viaje	extended_predictor	SI
+app_durante_vj	viaje	No_Inicially	NO
+edad	viaje	core_predictor	SI
+sexo	viaje	core_predictor	SI
+genero	viaje	No_Inicially	NO
+orien_sexual	viaje	No_Inicially	NO
+identidad_etnica	viaje	No_Inicially	NO
+madre_cab_familia	viaje	extended_predictor	SI
+max_nivel_edu	viaje	core_predictor	SI
+ocupacion_principal	viaje	core_predictor	SI
+key_hg	viaje	identifier	SI
+key_pers	viaje	identifier	SI
+key_pers_viaja	viaje	identifier	SI
+key_viaje	viaje	identifier	SI
+fexp_vj	viaje	expansion_weight	SI
+persona__cod_per	persona	No_Repeated	Pending_duplicate_validation
+persona__cod_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__nom_mun_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__cod_upl_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__cod_utam_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__zat_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__estra_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__orden	persona	No_Inicially	NO
+persona__edad	persona	No_Repeated	Pending_duplicate_validation
+persona__sexo	persona	No_Repeated	Pending_duplicate_validation
+persona__genero	persona	No_Repeated	Pending_duplicate_validation
+persona__orien_sexual	persona	No_Repeated	Pending_duplicate_validation
+persona__identidad_etnica	persona	No_Repeated	Pending_duplicate_validation
+persona__madre_cab_familia	persona	No_Repeated	Pending_duplicate_validation
+persona__max_nivel_edu	persona	No_Repeated	Pending_duplicate_validation
+persona__ocupacion_principal	persona	No_Repeated	Pending_duplicate_validation
+persona__actividad_economica	persona	No_Repeated	Pending_duplicate_validation
+persona__permanencia_entre_semana	persona	No_Inicially	NO
+persona__quien_lleva/recoge_establecimiento	persona	No_Inicially	NO
+persona__cuidado_despues_regresar	persona	No_Inicially	NO
+persona__condicion_discapacidad	persona	No_Inicially	NO
+persona__RLCPD	persona	No_Inicially	NO
+persona__cuidado_entre_semana_discap	persona	No_Inicially	NO
+persona__dific_princ_medios_transp_discap	persona	No_Inicially	NO
+persona__licencia_cond_vigente	persona	core_predictor	SI
+persona__posee_celular	persona	No_Inicially	NO
+persona__realiza_desplazamientos	persona	No_Inicially	NO
+persona__modo_principal_pre-pandemia	persona	No_Inicially	NO
+persona__modo_principal_pandemia	persona	No_Inicially	NO
+persona__razón_cambio_pandemia	persona	No_Inicially	NO
+persona__cambio_frecuencia_post-pandemia	persona	No_Inicially	NO
+persona__cambio_modo_pico_placa	persona	No_Inicially	NO
+persona__cambio_modo_grandes_obra	persona	No_Inicially	NO
+persona__cambio_modo_seguridad	persona	No_Inicially	NO
+persona__acto_violencia_sexual	persona	No_Inicially	NO
+persona__lugar_violencia_sexual	persona	No_Inicially	NO
+persona__a_quien_acudio	persona	No_Inicially	NO
+persona__key_hg	persona	No_Repeated	Pending_duplicate_validation
+persona__key_persona	persona	No_Repeated	Pending_duplicate_validation
+persona__fexp_per>5años	persona	No_Repeated	Pending_duplicate_validation
+hogar__fecha	hogar	No_Inicially	NO
+hogar__cod_viv	hogar	No_Repeated	Pending_duplicate_validation
+hogar__cod_hog	hogar	No_Repeated	Pending_duplicate_validation
+hogar__cod_utam_hg	hogar	No_Repeated	Pending_duplicate_validation
+hogar__nom_utam_hg	hogar	No_Repeated	Pending_duplicate_validation
+hogar__zat_hg	hogar	No_Repeated	Pending_duplicate_validation
+hogar__cod_upl_hg	hogar	No_Repeated	Pending_duplicate_validation
+hogar__nom_upl_hg	hogar	No_Inicially	NO
+hogar__cod_mpio_hg	hogar	No_Inicially	NO
+hogar__nom_mpio_hg	hogar	No_Inicially	NO
+hogar__cod_loc_hg	hogar	No_Inicially	NO
+hogar__nom_loc_hg	hogar	No_Inicially	NO
+hogar__estrato_hg	hogar	No_Inicially	NO
+hogar__cod_dane_manzana_hg	hogar	No_Inicially	NO
+hogar__tipo_enc	hogar	No_Inicially	NO
+hogar__tipo_zona_hg	hogar	No_Inicially	NO
+hogar__cod_barrio_vereda_hg	hogar	No_Inicially	NO
+hogar__nom_barrio_vereda_hg	hogar	No_Inicially	NO
+hogar__tipo_viv	hogar	extended_predictor	SI
+hogar__cant_hg_viv	hogar	No_Inicially	NO
+hogar__perstotal_hg	hogar	core_predictor	SI
+hogar__pers>5años_hg	hogar	extended_predictor	SI
+hogar__pers>18años_hg	hogar	extended_predictor	SI
+hogar__ingre_mes_hg	hogar	core_predictor	SI
+hogar__cómo_enteró	hogar	No_Inicially	NO
+hogar__key_hg	hogar	No_Inicially	NO
+hogar__fexp_hg	hogar	No_Inicially	NO
+stage_count	resumen de etapas	No_Inicially	NO
+stage_mode_sequence	resumen de etapas	No_Inicially	NO
+stage_access_minutes_sum_exploratory	resumen de etapas	No_Inicially	NO
+stage_wait_minutes_sum_exploratory	resumen de etapas	No_Inicially	NO
+stage_egress_minutes_sum_exploratory	resumen de etapas	No_Inicially	NO
+stage_cost_sum_exploratory	resumen de etapas	No_Inicially	NO
+stage_payment_sum_exploratory	resumen de etapas	No_Inicially	NO
+stage_parking_cost_sum_exploratory	resumen de etapas	No_Inicially	NO
+vehicle_records_in_household	resumen de vehículos	extended_predictor	SI
+vehicle_quantity_sum_exploratory	resumen de vehículos	No_Inicially	NO
+vehicle_type_values	resumen de vehículos	extended_predictor	SI
+zat_centroid_distance_m	distancia derivada entre ZAT	core_predictor	SI
+```

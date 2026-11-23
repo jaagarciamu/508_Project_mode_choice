@@ -1,0 +1,10 @@
+Variable,Parameters,Wald_Chi2,Degrees_of_Freedom,P_Value,Significance
+has_car_license,10,4103.0688619641805,10,0.0,***
+has_motorcycle_license,1,6690.089102340942,1,0.0,***
+sexo,10,1979.7832956828604,10,0.0,***
+estra_hg,60,4900.9597757021165,60,0.0,***
+vehicle_availability,20,6058.597395862824,20,0.0,***
+purpose_group,70,4120.784100975193,70,0.0,***
+edad,10,1706.6028652283485,10,0.0,***
+zat_centroid_distance_m,10,10568.65650099623,10,0.0,***
+time_period_6,50,1477.6848055183746,50,1.554821262538677e-276,***

@@ -1,0 +1,2 @@
+﻿source_trip_rows,factor_nonempty_rows,factor_numeric_rows,factor_non_numeric_rows,factor_missing_or_blank_rows,factor_negative_rows,factor_zero_rows,factor_sum_diagnostic_not_applied,expansion_release_status,expansion_documentation_validated
+100174,100174,100174,0,0,0,0,16723043.3,not_published_documentary_validation_pending,False

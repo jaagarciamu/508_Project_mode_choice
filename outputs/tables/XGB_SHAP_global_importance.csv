@@ -1,0 +1,27 @@
+Feature,Feature_Label,Mean_Absolute_SHAP
+numerical__zat_centroid_distance_m,Distance to ZAT centroid (m),0.7003215
+numerical__edad,Age,0.6733548
+categorical__vehicle_availability_1,One vehicle available,0.26415423
+categorical__vehicle_availability_2+,Two or more vehicles available,0.23254444
+binary__has_car_license,Car driving license,0.21402676
+categorical__sexo_Mujer,Sex: Female,0.21183878
+binary__has_motorcycle_license,Motorcycle driving license,0.18609254
+categorical__estra_hg_No aplica,Socioeconomic stratum: N/A,0.13665126
+categorical__purpose_group_WORK,Trip purpose: Work,0.102429435
+categorical__estra_hg_3,Socioeconomic stratum 3,0.093896836
+categorical__estra_hg_4,Socioeconomic stratum 4,0.073171474
+categorical__estra_hg_2,Socioeconomic stratum 2,0.07145849
+categorical__estra_hg_5,Socioeconomic stratum 5,0.06576278
+categorical__time_period_6_OVERNIGHT,Time period: Overnight,0.056716297
+categorical__purpose_group_PERSONAL_ERRANDS,Trip purpose: Personal errands,0.05086567
+categorical__estra_hg_6,Socioeconomic stratum 6,0.04448382
+categorical__time_period_6_PM_OFF_PEAK,Time period: PM off-peak,0.043452196
+categorical__time_period_6_PM_PEAK,Time period: PM peak,0.0423049
+categorical__time_period_6_AM_PEAK,Time period: AM peak,0.041355666
+categorical__purpose_group_HOME_RETURN,Trip purpose: Home return,0.03830322
+categorical__purpose_group_HEALTH,Trip purpose: Health,0.034106664
+categorical__time_period_6_EVENING,Time period: Evening,0.03101022
+categorical__purpose_group_ESCORT,Trip purpose: Escort,0.025318969
+categorical__purpose_group_LEISURE,Trip purpose: Leisure,0.0131990025
+categorical__purpose_group_SOCIAL_RELIGIOUS,Trip purpose: Social/Religious,0.01034438
+categorical__sexo_Intersexual,Sex: Intersexual,6.6347086e-05

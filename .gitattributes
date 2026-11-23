@@ -1,0 +1,8 @@
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.sqlite filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+data/analytical/df_model.csv filter=lfs diff=lfs merge=lfs -text
+data/analytical/em2023_mode_choice_analytical_dataset_tarea02_v1.csv filter=lfs diff=lfs merge=lfs -text
+data/analytical/em2023_mode_choice_analytical_dataset.csv filter=lfs diff=lfs merge=lfs -text
+data/analytical/em2023_trip_dataset.csv filter=lfs diff=lfs merge=lfs -text

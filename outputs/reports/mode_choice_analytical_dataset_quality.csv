@@ -1,0 +1,135 @@
+﻿metric,value,detail
+source_trip_rows,100174,All source viajes records
+analytical_rows,100174,No records removed for predictor missingness
+analytical_columns,49,Included fields match dictionary rows marked included
+key_viaje_unique_nonnull,True,One row per trip
+person_unmatched_rows,0,Validated many-to-one person join
+household_unmatched_rows,0,Validated many-to-one household join
+duplicate_pending_fields_reviewed,25,All original pending fields appear in the matrix
+exact_duplicate_fields_removed,20,All exact copies removed from analytical export
+explicit_researcher_exclusions,4,Four specified fields excluded; activity is not treated as a duplicate of occupation
+remaining_pending_fields_in_export,2,Retained for later review; not approved as predictors
+expansion_factor_applied,False,fexp_vj retained as source variable
+estrato_no_aplica_count,22511,Original value preserved as a categorical level
+estrato_category_counts,"{'2': 25682, '3': 23373, 'No aplica': 22511, '1': 13942, '4': 7390, '5': 4217, '6': 3059}",Original estra_hg categories; no numeric recoding
+complete_time_records,100150,"Start, end, and reported duration available"
+time_records_with_any_missing_component,24,Retained in the output
+duration_exact_matches,100146,Calculated versus reported duration
+duration_differences_over_one_minute,2,Calculated versus reported duration
+trips_crossing_midnight,51,End time earlier than start time
+time_of_day_bands_created,False,Time bands remain for EDA
+ZAT_distance_lookup_validation,"{'row_count': 1475010, 'unique_directed_pairs': 1475010, 'zone_count': 1215}",Distance table validation
+ZAT_distance_missing,0,Missing OD zone or unmatched distance lookup
+territory_origin_source_rows,100174,Territorial harmonization before/after counts and municipality coverage
+territory_origin_locality_valid_before,79032,Territorial harmonization before/after counts and municipality coverage
+territory_origin_locality_no_aplica_before,21142,Territorial harmonization before/after counts and municipality coverage
+territory_origin_municipality_fallback_rows,21142,Territorial harmonization before/after counts and municipality coverage
+territory_origin_unidentified_before,0,Territorial harmonization before/after counts and municipality coverage
+territory_origin_territory_localidad_after,79032,Territorial harmonization before/after counts and municipality coverage
+territory_origin_territory_municipio_after,21142,Territorial harmonization before/after counts and municipality coverage
+territory_origin_territory_no_disponible_after,0,Territorial harmonization before/after counts and municipality coverage
+territory_origin_municipalities_used,Bojacá | Cajicá | Choachí | Chocontá | Chía | Cota | Cáqueza | El Rosal | Facatativá | Funza | Fusagasugá | Fómeque | Gachancipá | Guaduas | Guasca | La Calera | La Mesa | Madrid | Mosquera | Pacho | Paratebueno | Sasaima | Sibaté | Soacha | Sopó | Subachoque | Suesca | Supatá | Tabio | Tenjo | Tocaima | Tocancipá | Ubaté | Zipacón | Zipaquirá,Territorial harmonization before/after counts and municipality coverage
+territory_origin_unique_municipality_count,35,Territorial harmonization before/after counts and municipality coverage
+territory_destination_source_rows,100174,Territorial harmonization before/after counts and municipality coverage
+territory_destination_locality_valid_before,79192,Territorial harmonization before/after counts and municipality coverage
+territory_destination_locality_no_aplica_before,20982,Territorial harmonization before/after counts and municipality coverage
+territory_destination_municipality_fallback_rows,20982,Territorial harmonization before/after counts and municipality coverage
+territory_destination_unidentified_before,0,Territorial harmonization before/after counts and municipality coverage
+territory_destination_territory_localidad_after,79192,Territorial harmonization before/after counts and municipality coverage
+territory_destination_territory_municipio_after,20982,Territorial harmonization before/after counts and municipality coverage
+territory_destination_territory_no_disponible_after,0,Territorial harmonization before/after counts and municipality coverage
+territory_destination_municipalities_used,Bojacá | Cajicá | Choachí | Chocontá | Chía | Cota | Cáqueza | El Rosal | Facatativá | Funza | Fusagasugá | Fómeque | Gachancipá | Guasca | La Calera | La Mesa | Madrid | Mosquera | Pacho | Sasaima | Sibaté | Soacha | Sopó | Subachoque | Suesca | Supatá | Tabio | Tenjo | Tocaima | Tocancipá | Ubaté | Zipacón | Zipaquirá,Territorial harmonization before/after counts and municipality coverage
+territory_destination_unique_municipality_count,33,Territorial harmonization before/after counts and municipality coverage
+missing::estra_hg,0,Exported field missingness
+missing::zat_ori,0,Exported field missingness
+missing::localidad_ori,0,Exported field missingness
+missing::nom_mun_ori,0,Exported field missingness
+missing::zat_des,0,Exported field missingness
+missing::localidad_des,0,Exported field missingness
+missing::nom_mun_des,0,Exported field missingness
+missing::hora_ini,0,Exported field missingness
+missing::hora_fin,0,Exported field missingness
+missing::duracion_min,0,Exported field missingness
+missing::t_acceso_min,0,Exported field missingness
+missing::t_espera_min,0,Exported field missingness
+missing::t_egreso_min,0,Exported field missingness
+missing::modo_principal_agrupado,0,Exported field missingness
+missing::modo_principal_desagrupado,0,Exported field missingness
+missing::motivo_viaje,0,Exported field missingness
+missing::frecuencia_viaje,0,Exported field missingness
+missing::app_antes_vj,0,Exported field missingness
+missing::edad,0,Exported field missingness
+missing::sexo,0,Exported field missingness
+missing::madre_cab_familia,0,Exported field missingness
+missing::max_nivel_edu,0,Exported field missingness
+missing::ocupacion_principal,0,Exported field missingness
+missing::key_hg,0,Exported field missingness
+missing::key_pers,0,Exported field missingness
+missing::key_pers_viaja,0,Exported field missingness
+missing::key_viaje,0,Exported field missingness
+missing::fexp_vj,0,Exported field missingness
+missing::persona__licencia_cond_vigente,0,Exported field missingness
+missing::persona__fexp_per>5años,0,Exported field missingness
+missing::hogar__cod_upl_hg,0,Exported field missingness
+missing::hogar__tipo_viv,0,Exported field missingness
+missing::hogar__perstotal_hg,0,Exported field missingness
+missing::hogar__pers>5años_hg,0,Exported field missingness
+missing::hogar__pers>18años_hg,0,Exported field missingness
+missing::hogar__ingre_mes_hg,0,Exported field missingness
+missing::vehicle_records_in_household,0,Exported field missingness
+missing::vehicle_type_values,39911,Exported field missingness
+missing::zat_centroid_distance_m,0,Exported field missingness
+missing::start_time_interpreted,9,Exported field missingness
+missing::end_time_interpreted,15,Exported field missingness
+missing::start_minutes_after_midnight,9,Exported field missingness
+missing::end_minutes_after_midnight,15,Exported field missingness
+missing::duration_calculated_min,24,Exported field missingness
+missing::crosses_midnight,24,Exported field missingness
+missing::territory_name_ori,0,Exported field missingness
+missing::territory_type_ori,0,Exported field missingness
+missing::territory_name_des,0,Exported field missingness
+missing::territory_type_des,0,Exported field missingness
+distribution::modo_principal_agrupado::TRANSPORTE PÚBLICO,29407,Observed outcome category count
+distribution::modo_principal_agrupado::A PIE > 15 MIN,24932,Observed outcome category count
+distribution::modo_principal_agrupado::AUTO,12586,Observed outcome category count
+distribution::modo_principal_agrupado::A PIE <15 MIN,12392,Observed outcome category count
+distribution::modo_principal_agrupado::MOTO,6247,Observed outcome category count
+distribution::modo_principal_agrupado::BICICLETA,6104,Observed outcome category count
+distribution::modo_principal_agrupado::TAXI OCUPADO,3267,Observed outcome category count
+distribution::modo_principal_agrupado::TRANSPORTE ESCOLAR,2058,Observed outcome category count
+distribution::modo_principal_agrupado::ESPECIAL OCUPADO,1982,Observed outcome category count
+distribution::modo_principal_agrupado::INFORMAL,867,Observed outcome category count
+distribution::modo_principal_agrupado::OTRO,332,Observed outcome category count
+distribution::modo_principal_desagrupado:: A pie (Mayores de 15 min),24932,Observed outcome category count
+distribution::modo_principal_desagrupado:: A pie (Menores de 15 min),12392,Observed outcome category count
+distribution::modo_principal_desagrupado:: TransMilenio,12296,Observed outcome category count
+distribution::modo_principal_desagrupado:: SITP – Urbano/ Complementario/Especial /Provisional,12160,Observed outcome category count
+distribution::modo_principal_desagrupado:: Vehículo privado como conductor,8110,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bicicleta convencional como conductor,5626,Observed outcome category count
+distribution::modo_principal_desagrupado:: Motocicleta como conductor,5547,Observed outcome category count
+distribution::modo_principal_desagrupado:: Vehículo privado como pasajero,3758,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bus/Buseta/Microbús intermunicipal,3463,Observed outcome category count
+distribution::modo_principal_desagrupado:: Taxi convencional,2217,Observed outcome category count
+distribution::modo_principal_desagrupado:: Transporte escolar,2058,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bus privado/de empresa,1254,Observed outcome category count
+distribution::modo_principal_desagrupado:: Alimentador,1059,Observed outcome category count
+distribution::modo_principal_desagrupado:: Taxi solicitado por app,936,Observed outcome category count
+distribution::modo_principal_desagrupado:: Transporte individual app móvil (placa blanca/amarilla),728,Observed outcome category count
+distribution::modo_principal_desagrupado:: Motocicleta como pasajero,700,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bus/automóvil/Van informal o pirata,664,Observed outcome category count
+distribution::modo_principal_desagrupado:: Auto compartido,511,Observed outcome category count
+distribution::modo_principal_desagrupado::  Bus Dual,401,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bicicleta con motor como conductor,341,Observed outcome category count
+distribution::modo_principal_desagrupado:: Camión/Volqueta /Tractomula,180,Observed outcome category count
+distribution::modo_principal_desagrupado:: Auto alquilado,177,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bicitaxi,165,Observed outcome category count
+distribution::modo_principal_desagrupado:: Taxi colectivo,114,Observed outcome category count
+distribution::modo_principal_desagrupado:: Patineta/Scooter,87,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bicicleta convencional como pasajero,85,Observed outcome category count
+distribution::modo_principal_desagrupado::Otro,57,Observed outcome category count
+distribution::modo_principal_desagrupado:: Motocarro de pasajeros/ carga,38,Observed outcome category count
+distribution::modo_principal_desagrupado:: Auto eléctrico,30,Observed outcome category count
+distribution::modo_principal_desagrupado:: Sistema de Bicicletas de Bogotá (Bicicleta pública),29,Observed outcome category count
+distribution::modo_principal_desagrupado:: TransMicable,28,Observed outcome category count
+distribution::modo_principal_desagrupado:: Bicicleta con motor como pasajero,23,Observed outcome category count
+distribution::modo_principal_desagrupado:: Vehículo de tracción humana/animal ,8,Observed outcome category count

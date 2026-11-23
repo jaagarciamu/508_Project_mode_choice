@@ -16,6 +16,10 @@ dependencies = [
     "scipy>=1.13,<2",
     "scikit-learn>=1.5,<2",
     "statsmodels>=0.14,<1",
+    "xgboost>=3.4.1",
+    "torch>=2.15.0",
+    "shap>=0.54.1",
+    "optuna>=5.1.0",
 ]
 
 [project.optional-dependencies]

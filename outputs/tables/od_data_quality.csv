@@ -1,0 +1,31 @@
+﻿metric,value,status,detail
+trip_key_unique_and_nonnull,100174,pass,
+household_join_missing_rows,0,pass,
+geographic_crosswalk_applied,no,not_used_for_filtering,Zone identifiers remain source text; no coercion or inferred match is applied.
+legacy_study_area_matrix_trip_count,99741,historical_comparison,Previous release restricted both endpoints to its inferred study-area municipality set.
+trips_included_beyond_legacy_study_area_scope,433,historical_comparison,Included with source zone codes unchanged; not reclassified as external/gateway by this build.
+intrazonal_trip_count,15016,included,
+households_with_trips_constant_fexp_hg,21508,reported,
+households_with_trips_variable_fexp_hg,0,reported,
+households_with_trips_constant_fexp_vj,21508,reported,
+households_with_trips_variable_fexp_vj,0,reported,
+factor_mismatch_records_fexp_hg_vs_fexp_vj,90194,documented_difference,Mismatch does not establish which supplied field is erroneous.
+published_daily_trip_benchmark,16723044,reference_only,
+factor_field_fexp_hg_nonempty,100174,reported,
+factor_field_fexp_hg_numeric,100174,reported,
+factor_field_fexp_hg_non_numeric,0,reported,
+factor_field_fexp_hg_missing,0,reported,
+factor_field_fexp_hg_zero,0,reported,
+factor_field_fexp_hg_negative,0,reported,
+factor_field_fexp_hg_min,1.48,reported,
+factor_field_fexp_hg_max,1741.15,reported,
+factor_field_fexp_hg_sum_repeated_per_trip,16723042.90,reported,
+factor_field_fexp_vj_nonempty,100174,reported,
+factor_field_fexp_vj_numeric,100174,reported,
+factor_field_fexp_vj_non_numeric,0,reported,
+factor_field_fexp_vj_missing,0,reported,
+factor_field_fexp_vj_zero,0,reported,
+factor_field_fexp_vj_negative,0,reported,
+factor_field_fexp_vj_min,1.5,reported,
+factor_field_fexp_vj_max,1741.1,reported,
+factor_field_fexp_vj_sum_diagnostic,16723043.3,reported,

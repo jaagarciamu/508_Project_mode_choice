@@ -1,0 +1,3 @@
+# Muestra local de unión para elección modal
+
+Archivo de revisión local, derivado de la SQLite existente y excluido de Git. Contiene un máximo de 3 viajes de ejemplo por categoría observada de modo, no una muestra estadística. Incluye campos originales de viaje, persona y hogar con prefijos para distinguir su procedencia. Vehículos y etapas se resumen para conservar una fila por viaje. Las columnas con sufijo `_exploratory` y las secuencias de categorías son únicamente ilustrativas; no constituyen reglas aprobadas de agregación ni valores listos para modelar. El archivo contiene microdatos e identificadores y debe permanecer local, fuera de Git.

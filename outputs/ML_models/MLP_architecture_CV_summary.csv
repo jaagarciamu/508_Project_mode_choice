@@ -1,0 +1,5 @@
+,accuracy,accuracy,macro_f1,macro_f1,log_loss,log_loss
+,mean,std,mean,std,mean,std
+architecture,,,,,,
+MLP_A_128_64_64,0.54531,0.00525,0.35622,0.00397,1.31726,0.0112
+MLP_C_128_64,0.5492,0.00247,0.35588,0.00437,1.31388,0.00539

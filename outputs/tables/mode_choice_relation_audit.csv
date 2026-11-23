@@ -1,0 +1,19 @@
+﻿check,table,field,value,status,detail
+key_profile,viajes,key_viaje,100174,reported,missing=0; duplicate_groups=0
+key_profile,personas,key_persona,67556,reported,missing=0; duplicate_groups=0
+key_profile,hogares,key_hg,22755,reported,missing=0; duplicate_groups=0
+key_profile,vehiculos,cod_vh,17392,reported,missing=0; duplicate_groups=0
+key_profile,etapas,key_etapa,110881,reported,missing=0; duplicate_groups=0
+relationship,trip_person,viajes.key_pers->personas.key_persona,100174,validated,left_rows=100174; unmatched_left_rows=0; left_repeated_key_groups=45663; right_duplicate_key_groups=0; right_rows=67556
+relationship,trip_household,viajes.key_hg->hogares.key_hg,100174,validated,left_rows=100174; unmatched_left_rows=0; left_repeated_key_groups=20917; right_duplicate_key_groups=0; right_rows=22755
+relationship,stage_trip,etapas.key_viaje->viajes.key_viaje,110881,validated,left_rows=110881; unmatched_left_rows=0; left_repeated_key_groups=9492; right_duplicate_key_groups=0; right_rows=100174
+relationship,vehicle_household,vehiculos.key_hg->hogares.key_hg,17392,validated,left_rows=17392; unmatched_left_rows=0; left_repeated_key_groups=3649; right_duplicate_key_groups=0; right_rows=22755
+alternate_link_diagnostic,viajes,key_pers_viaja->personas.key_persona,0,diagnostic_only,unmatched_trip_rows=100174; not used for enrichment
+trips_without_stages,viajes,key_viaje->etapas,0,reported,Trip count with zero linked stage records.
+trips_with_multiple_stages,viajes,key_viaje->etapas,9492,reported,Trip count with more than one linked stage record.
+stage_count_distribution,viajes,stages_per_trip,90682,reported,stage_count=1
+stage_count_distribution,viajes,stages_per_trip,8438,reported,stage_count=2
+stage_count_distribution,viajes,stages_per_trip,919,reported,stage_count=3
+stage_count_distribution,viajes,stages_per_trip,111,reported,stage_count=4
+stage_count_distribution,viajes,stages_per_trip,22,reported,stage_count=5
+stage_count_distribution,viajes,stages_per_trip,2,reported,stage_count=6

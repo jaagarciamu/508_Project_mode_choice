@@ -1,0 +1,26 @@
+﻿pending_field,counterpart_field,comparison_level,linked_trip_rows,comparable_rows,equal_rows,match_percent,different_nonmissing_rows,difference_percent,pending_missing_rows,counterpart_missing_rows,pending_only_missing_rows,counterpart_only_missing_rows,both_missing_rows,coverage_percent,possible_duplicate_relevant,exact_value_copy,decision
+persona__cod_per,cod_pers,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__cod_hg,cod_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__nom_mun_hg,nom_mun_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__cod_upl_hg,cod_upl_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__cod_utam_hg,cod_utam_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__zat_hg,zat_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__estra_hg,estra_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__edad,edad,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__sexo,sexo,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__genero,genero,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__orien_sexual,orien_sexual,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__identidad_etnica,identidad_etnica,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+persona__madre_cab_familia,madre_cab_familia,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__max_nivel_edu,max_nivel_edu,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__ocupacion_principal,ocupacion_principal,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__actividad_economica,,,100174,0,0,,0,,0,,,,,0.0,False,False,retain as pending; no directly comparable counterpart identified
+persona__key_hg,key_hg,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__key_persona,key_pers,trip-person,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,exclude pending copy; retain the selected canonical field
+persona__fexp_per>5años,,,100174,0,0,,0,,0,,,,,0.0,False,False,retain as pending; no directly comparable counterpart identified
+hogar__cod_viv,,,100174,0,0,,0,,0,,,,,0.0,False,False,retain as pending; no directly comparable counterpart identified
+hogar__cod_hog,cod_hg,trip-household,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+hogar__cod_utam_hg,cod_utam_hg,trip-household,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+hogar__nom_utam_hg,,,100174,0,0,,0,,0,,,,,0.0,False,False,retain as pending; no directly comparable counterpart identified
+hogar__zat_hg,zat_hg,trip-household,100174,100174,100174,100.0,0,0.0,0,0.0,0.0,0.0,0.0,100.0,True,True,retain pending field; high agreement is not exact and needs review
+hogar__cod_upl_hg,cod_upl_hg,trip-household,100174,100174,22511,22.472,77663,77.528,0,0.0,0.0,0.0,0.0,100.0,False,False,retain pending field; values differ or do not support a duplicate finding

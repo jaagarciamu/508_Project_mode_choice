@@ -1,0 +1,120 @@
+{
+    "project": "CME 508 - Urban Travel Forecasting",
+    "analysis": "Multinomial Logit Model",
+    "final_model": "B6",
+    "benchmark_model": "A0",
+    "intermediate_model": "B3",
+    "selection_rationale": "B6 was selected as the final parsimonious MNL specification, prioritizing model simplicity and interpretability while maintaining practically equivalent predictive performance.",
+    "b6_specification": {
+        "name": "Combined motorcycle license and restricted sex",
+        "variables": [
+            "has_car_license",
+            "has_motorcycle_license",
+            "sexo",
+            "estra_hg",
+            "vehicle_availability",
+            "purpose_group",
+            "time_period_6",
+            "edad",
+            "zat_centroid_distance_m"
+        ],
+        "shared_variables": [],
+        "zero_restrictions": {
+            "binary__has_motorcycle_license": [
+                "A PIE <15 MIN",
+                "A PIE > 15 MIN",
+                "BICICLETA",
+                "ESPECIAL OCUPADO",
+                "INFORMAL",
+                "OTRO",
+                "TAXI OCUPADO",
+                "TRANSPORTE ESCOLAR",
+                "TRANSPORTE PÚBLICO"
+            ],
+            "categorical__sexo_Intersexual": [
+                "A PIE <15 MIN",
+                "A PIE > 15 MIN",
+                "BICICLETA",
+                "ESPECIAL OCUPADO",
+                "INFORMAL",
+                "MOTO",
+                "OTRO",
+                "TAXI OCUPADO",
+                "TRANSPORTE ESCOLAR",
+                "TRANSPORTE PÚBLICO"
+            ]
+        },
+        "parent": "A1"
+    },
+    "b6_restrictions": {
+        "binary__has_motorcycle_license": [
+            "A PIE <15 MIN",
+            "A PIE > 15 MIN",
+            "BICICLETA",
+            "ESPECIAL OCUPADO",
+            "INFORMAL",
+            "OTRO",
+            "TAXI OCUPADO",
+            "TRANSPORTE ESCOLAR",
+            "TRANSPORTE PÚBLICO"
+        ],
+        "categorical__sexo_Intersexual": [
+            "A PIE <15 MIN",
+            "A PIE > 15 MIN",
+            "BICICLETA",
+            "ESPECIAL OCUPADO",
+            "INFORMAL",
+            "MOTO",
+            "OTRO",
+            "TAXI OCUPADO",
+            "TRANSPORTE ESCOLAR",
+            "TRANSPORTE PÚBLICO"
+        ]
+    },
+    "b6_features": [
+        "const",
+        "binary__has_car_license",
+        "binary__has_motorcycle_license",
+        "categorical__sexo_Intersexual",
+        "categorical__sexo_Mujer",
+        "categorical__estra_hg_2",
+        "categorical__estra_hg_3",
+        "categorical__estra_hg_4",
+        "categorical__estra_hg_5",
+        "categorical__estra_hg_6",
+        "categorical__estra_hg_No aplica",
+        "categorical__vehicle_availability_1",
+        "categorical__vehicle_availability_2+",
+        "categorical__purpose_group_ESCORT",
+        "categorical__purpose_group_HEALTH",
+        "categorical__purpose_group_HOME_RETURN",
+        "categorical__purpose_group_LEISURE",
+        "categorical__purpose_group_PERSONAL_ERRANDS",
+        "categorical__purpose_group_SOCIAL_RELIGIOUS",
+        "categorical__purpose_group_WORK",
+        "categorical__time_period_6_AM_PEAK",
+        "categorical__time_period_6_EVENING",
+        "categorical__time_period_6_OVERNIGHT",
+        "categorical__time_period_6_PM_OFF_PEAK",
+        "categorical__time_period_6_PM_PEAK",
+        "numerical__edad",
+        "numerical__zat_centroid_distance_m"
+    ],
+    "b6_expected_parameters": 251,
+    "b6_estimation": {
+        "n_parameters": 251,
+        "log_likelihood": -108925.27267482685,
+        "AIC": 218352.5453496537,
+        "BIC": 220684.63803037975,
+        "converged": true,
+        "iterations": 254,
+        "gradient_norm": 5.400604317481337e-05,
+        "runtime_seconds": 85.84639609999431
+    },
+    "validation": {
+        "method": "StratifiedGroupKFold",
+        "n_splits": 5,
+        "group_variable": "key_pers",
+        "random_state": 42
+    }
+}

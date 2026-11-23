@@ -1,0 +1,121 @@
+﻿metric,value,detail
+source_trip_rows,100174,All eligible viajes records
+analytical_rows,100174,No missingness-based exclusions
+analytical_columns,58,Matches the field dictionary
+key_viaje_unique_nonnull,True,One row per trip
+person_unmatched_rows,0,Validated many-to-one join
+household_unmatched_rows,0,Validated many-to-one join
+pending_fields_tested,25,All pending fields represented in duplicate matrix
+pending_exact_copies_consolidated,8,Only exact copies of selected fields excluded
+complete_time_records,100150,"Start, end, reported duration available"
+time_records_with_any_missing_component,24,Retained in analytical dataset
+duration_exact_matches,100146,"Calculated versus reported, complete records"
+duration_matches_within_one_minute,100148,"Calculated versus reported, complete records"
+duration_differences_over_one_minute,2,"Calculated versus reported, complete records"
+trips_crossing_midnight,51,End time earlier than start time
+ZAT_distance_lookup_validation,"{'row_count': 1475010, 'unique_directed_pairs': 1475010, 'zone_count': 1215}",Distance table validation summary
+ZAT_distance_missing,0,Missing OD zone or unmatched lookup
+expansion_factor_applied,False,fexp_vj retained as source variable
+time_of_day_bands_created,False,Bands deferred to EDA histogram
+missing::estra_hg,0,Field-level missingness
+missing::zat_ori,0,Field-level missingness
+missing::localidad_ori,0,Field-level missingness
+missing::zat_des,0,Field-level missingness
+missing::localidad_des,0,Field-level missingness
+missing::hora_ini,0,Field-level missingness
+missing::hora_fin,0,Field-level missingness
+missing::duracion_min,0,Field-level missingness
+missing::t_acceso_min,0,Field-level missingness
+missing::t_espera_min,0,Field-level missingness
+missing::t_egreso_min,0,Field-level missingness
+missing::modo_principal_agrupado,0,Field-level missingness
+missing::modo_principal_desagrupado,0,Field-level missingness
+missing::motivo_viaje,0,Field-level missingness
+missing::frecuencia_viaje,0,Field-level missingness
+missing::app_antes_vj,0,Field-level missingness
+missing::edad,0,Field-level missingness
+missing::sexo,0,Field-level missingness
+missing::madre_cab_familia,0,Field-level missingness
+missing::max_nivel_edu,0,Field-level missingness
+missing::ocupacion_principal,0,Field-level missingness
+missing::key_hg,0,Field-level missingness
+missing::key_pers,0,Field-level missingness
+missing::key_pers_viaja,0,Field-level missingness
+missing::key_viaje,0,Field-level missingness
+missing::fexp_vj,0,Field-level missingness
+missing::persona__licencia_cond_vigente,0,Field-level missingness
+missing::hogar__tipo_viv,0,Field-level missingness
+missing::hogar__perstotal_hg,0,Field-level missingness
+missing::hogar__pers>5años_hg,0,Field-level missingness
+missing::hogar__pers>18años_hg,0,Field-level missingness
+missing::hogar__ingre_mes_hg,0,Field-level missingness
+missing::vehicle_records_in_household,0,Field-level missingness
+missing::vehicle_type_values,39911,Field-level missingness
+missing::zat_centroid_distance_m,0,Field-level missingness
+missing::persona__cod_per,0,Field-level missingness
+missing::persona__cod_hg,0,Field-level missingness
+missing::persona__nom_mun_hg,0,Field-level missingness
+missing::persona__cod_upl_hg,0,Field-level missingness
+missing::persona__cod_utam_hg,0,Field-level missingness
+missing::persona__zat_hg,0,Field-level missingness
+missing::persona__genero,0,Field-level missingness
+missing::persona__orien_sexual,0,Field-level missingness
+missing::persona__identidad_etnica,0,Field-level missingness
+missing::persona__actividad_economica,0,Field-level missingness
+missing::persona__fexp_per>5años,0,Field-level missingness
+missing::hogar__cod_viv,0,Field-level missingness
+missing::hogar__cod_hog,0,Field-level missingness
+missing::hogar__cod_utam_hg,0,Field-level missingness
+missing::hogar__nom_utam_hg,0,Field-level missingness
+missing::hogar__zat_hg,0,Field-level missingness
+missing::hogar__cod_upl_hg,0,Field-level missingness
+missing::start_time_interpreted,9,Field-level missingness
+missing::end_time_interpreted,15,Field-level missingness
+missing::start_minutes_after_midnight,9,Field-level missingness
+missing::end_minutes_after_midnight,15,Field-level missingness
+missing::duration_calculated_min,24,Field-level missingness
+missing::crosses_midnight,24,Field-level missingness
+distribution::modo_principal_agrupado::TRANSPORTE PÚBLICO,29407,Observed category count
+distribution::modo_principal_agrupado::A PIE > 15 MIN,24932,Observed category count
+distribution::modo_principal_agrupado::AUTO,12586,Observed category count
+distribution::modo_principal_agrupado::A PIE <15 MIN,12392,Observed category count
+distribution::modo_principal_agrupado::MOTO,6247,Observed category count
+distribution::modo_principal_agrupado::BICICLETA,6104,Observed category count
+distribution::modo_principal_agrupado::TAXI OCUPADO,3267,Observed category count
+distribution::modo_principal_agrupado::TRANSPORTE ESCOLAR,2058,Observed category count
+distribution::modo_principal_agrupado::ESPECIAL OCUPADO,1982,Observed category count
+distribution::modo_principal_agrupado::INFORMAL,867,Observed category count
+distribution::modo_principal_agrupado::OTRO,332,Observed category count
+distribution::modo_principal_desagrupado:: A pie (Mayores de 15 min),24932,Observed category count
+distribution::modo_principal_desagrupado:: A pie (Menores de 15 min),12392,Observed category count
+distribution::modo_principal_desagrupado:: TransMilenio,12296,Observed category count
+distribution::modo_principal_desagrupado:: SITP – Urbano/ Complementario/Especial /Provisional,12160,Observed category count
+distribution::modo_principal_desagrupado:: Vehículo privado como conductor,8110,Observed category count
+distribution::modo_principal_desagrupado:: Bicicleta convencional como conductor,5626,Observed category count
+distribution::modo_principal_desagrupado:: Motocicleta como conductor,5547,Observed category count
+distribution::modo_principal_desagrupado:: Vehículo privado como pasajero,3758,Observed category count
+distribution::modo_principal_desagrupado:: Bus/Buseta/Microbús intermunicipal,3463,Observed category count
+distribution::modo_principal_desagrupado:: Taxi convencional,2217,Observed category count
+distribution::modo_principal_desagrupado:: Transporte escolar,2058,Observed category count
+distribution::modo_principal_desagrupado:: Bus privado/de empresa,1254,Observed category count
+distribution::modo_principal_desagrupado:: Alimentador,1059,Observed category count
+distribution::modo_principal_desagrupado:: Taxi solicitado por app,936,Observed category count
+distribution::modo_principal_desagrupado:: Transporte individual app móvil (placa blanca/amarilla),728,Observed category count
+distribution::modo_principal_desagrupado:: Motocicleta como pasajero,700,Observed category count
+distribution::modo_principal_desagrupado:: Bus/automóvil/Van informal o pirata,664,Observed category count
+distribution::modo_principal_desagrupado:: Auto compartido,511,Observed category count
+distribution::modo_principal_desagrupado::  Bus Dual,401,Observed category count
+distribution::modo_principal_desagrupado:: Bicicleta con motor como conductor,341,Observed category count
+distribution::modo_principal_desagrupado:: Camión/Volqueta /Tractomula,180,Observed category count
+distribution::modo_principal_desagrupado:: Auto alquilado,177,Observed category count
+distribution::modo_principal_desagrupado:: Bicitaxi,165,Observed category count
+distribution::modo_principal_desagrupado:: Taxi colectivo,114,Observed category count
+distribution::modo_principal_desagrupado:: Patineta/Scooter,87,Observed category count
+distribution::modo_principal_desagrupado:: Bicicleta convencional como pasajero,85,Observed category count
+distribution::modo_principal_desagrupado::Otro,57,Observed category count
+distribution::modo_principal_desagrupado:: Motocarro de pasajeros/ carga,38,Observed category count
+distribution::modo_principal_desagrupado:: Auto eléctrico,30,Observed category count
+distribution::modo_principal_desagrupado:: Sistema de Bicicletas de Bogotá (Bicicleta pública),29,Observed category count
+distribution::modo_principal_desagrupado:: TransMicable,28,Observed category count
+distribution::modo_principal_desagrupado:: Bicicleta con motor como pasajero,23,Observed category count
+distribution::modo_principal_desagrupado:: Vehículo de tracción humana/animal ,8,Observed category count

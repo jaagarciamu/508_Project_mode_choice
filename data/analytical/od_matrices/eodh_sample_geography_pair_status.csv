@@ -1,0 +1,5 @@
+﻿pair_status,trip_rows
+external_or_gateway_zone__to__external_or_gateway_zone,3
+external_or_gateway_zone__to__study_area_zone,237
+study_area_zone__to__external_or_gateway_zone,193
+study_area_zone__to__study_area_zone,99741

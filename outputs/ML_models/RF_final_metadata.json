@@ -1,0 +1,44 @@
+{
+    "model": "Random Forest",
+    "status": "Final",
+    "features": [
+        "has_car_license",
+        "has_motorcycle_license",
+        "sexo",
+        "estra_hg",
+        "vehicle_availability",
+        "purpose_group",
+        "time_period_6",
+        "edad",
+        "zat_centroid_distance_m"
+    ],
+    "target": "modo_principal_agrupado",
+    "target_classes": [
+        "AUTO",
+        "A PIE <15 MIN",
+        "A PIE > 15 MIN",
+        "BICICLETA",
+        "ESPECIAL OCUPADO",
+        "INFORMAL",
+        "MOTO",
+        "OTRO",
+        "TAXI OCUPADO",
+        "TRANSPORTE ESCOLAR",
+        "TRANSPORTE P\u00daBLICO"
+    ],
+    "hyperparameters": {
+        "max_depth": 25,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt"
+    },
+    "n_estimators": 300,
+    "class_weight": "balanced",
+    "random_state": 42,
+    "cv_macro_f1": 0.3339,
+    "cv_log_loss": 1.5619,
+    "test_metrics": {
+        "Accuracy": 0.4456538019871187,
+        "Macro-F1": 0.34181883660776463,
+        "Log Loss": 1.5390699114826936
+    }
+}

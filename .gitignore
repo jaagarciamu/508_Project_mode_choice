@@ -1,36 +1,53 @@
-# Python environments and caches
+
+# ==========================================
+# Python environments and cache
+# ==========================================
 .venv/
-.cache/
+venv/
+env/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
+.cache/
 
-# Jupyter local state
+# ==========================================
+# Jupyter
+# ==========================================
 .ipynb_checkpoints/
 
-# Local source data: preserve the existing folder locally, never commit its contents
-/data/sources/raw/
-
-# Locally generated data and outputs
-/data/relational/*
-!/data/relational/README.md
-/data/interim/*
-!/data/interim/README.md
-/data/analytical/*
-!/data/analytical/README.md
-/outputs/tables/*
-!/outputs/tables/README.md
-/outputs/figures/*
-!/outputs/figures/README.md
-/outputs/matrices/*
-!/outputs/matrices/README.md
-/outputs/reports/*
-!/outputs/reports/README.md
-
+# ==========================================
 # Local environment and secrets
+# ==========================================
 .env
 .env.*
 !.env.example
 *.log
+
+# ==========================================
+# Raw source data
+# Keep original source data local unless
+# redistribution is explicitly permitted.
+# ==========================================
+/data/sources/raw/
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# IDE settings
+# ==========================================
+.vscode/
+.idea/
+
+# ==========================================
+# Temporary and backup files
+# ==========================================
+*.tmp
+*.bak
+*~

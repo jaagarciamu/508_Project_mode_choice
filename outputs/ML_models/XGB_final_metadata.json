@@ -1,0 +1,51 @@
+{
+    "model": "XGBoost",
+    "status": "Final",
+    "features": [
+        "has_car_license",
+        "has_motorcycle_license",
+        "sexo",
+        "estra_hg",
+        "vehicle_availability",
+        "purpose_group",
+        "time_period_6",
+        "edad",
+        "zat_centroid_distance_m"
+    ],
+    "target": "modo_principal_agrupado",
+    "target_classes": [
+        "AUTO",
+        "A PIE <15 MIN",
+        "A PIE > 15 MIN",
+        "BICICLETA",
+        "ESPECIAL OCUPADO",
+        "INFORMAL",
+        "MOTO",
+        "OTRO",
+        "TAXI OCUPADO",
+        "TRANSPORTE ESCOLAR",
+        "TRANSPORTE P\u00daBLICO"
+    ],
+    "hyperparameters": {
+        "n_estimators": 300,
+        "max_depth": 10,
+        "min_child_weight": 1,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "objective": "multi:softprob",
+        "class_weight": "balanced",
+        "random_state": 42
+    },
+    "cv_metrics": {
+        "macro_f1_mean": 0.359284,
+        "macro_f1_std": 0.004275,
+        "log_loss_mean": 1.400981,
+        "log_loss_std": 0.011358
+    },
+    "test_metrics": {
+        "Accuracy": 0.5024214888411803,
+        "Macro-F1": 0.3796080712795815,
+        "Log Loss": 1.384821891784668
+    }
+}

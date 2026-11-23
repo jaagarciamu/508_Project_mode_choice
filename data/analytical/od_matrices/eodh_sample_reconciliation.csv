@@ -1,0 +1,13 @@
+﻿metric,count
+source_trip_rows,100174
+unique_trip_keys,100174
+sample_matrix_in_scope_trips,99741
+sample_trips_with_classified_source_mode,99741
+sample_trips_with_unclassified_mode,0
+intrazonal_sample_trips,15013
+sample_od_pairs,47192
+sample_od_mode_pairs,59957
+destination_external_or_gateway_zone,196
+destination_study_area_zone,99978
+origin_external_or_gateway_zone,240
+origin_study_area_zone,99934

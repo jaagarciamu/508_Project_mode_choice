@@ -1,0 +1,10 @@
+Variable,Importance
+estra_hg,0.21880017
+purpose_group,0.2041325
+has_motorcycle_license,0.17410378
+time_period_6,0.1150652
+vehicle_availability,0.08565456
+has_car_license,0.07388427
+sexo,0.046853766
+zat_centroid_distance_m,0.04111498
+edad,0.04039079

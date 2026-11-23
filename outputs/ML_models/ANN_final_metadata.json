@@ -1,0 +1,49 @@
+{
+    "model": "Multilayer Perceptron",
+    "architecture": [
+        128,
+        64
+    ],
+    "output_classes": 11,
+    "activation": "ReLU",
+    "dropout_rates": [
+        0.2,
+        0.3
+    ],
+    "optimizer": "AdamW",
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "class_weight_alpha": 0.5,
+    "batch_size": 512,
+    "epochs": 66,
+    "input_dim": 26,
+    "features": [
+        "has_car_license",
+        "has_motorcycle_license",
+        "sexo",
+        "estra_hg",
+        "vehicle_availability",
+        "purpose_group",
+        "time_period_6",
+        "edad",
+        "zat_centroid_distance_m"
+    ],
+    "target_classes": [
+        "AUTO",
+        "A PIE <15 MIN",
+        "A PIE > 15 MIN",
+        "BICICLETA",
+        "ESPECIAL OCUPADO",
+        "INFORMAL",
+        "MOTO",
+        "OTRO",
+        "TAXI OCUPADO",
+        "TRANSPORTE ESCOLAR",
+        "TRANSPORTE P\u00daBLICO"
+    ],
+    "test_metrics": {
+        "accuracy": 0.5516001797393779,
+        "macro_f1": 0.3653787575321898,
+        "log_loss": 1.2872262001037598
+    }
+}

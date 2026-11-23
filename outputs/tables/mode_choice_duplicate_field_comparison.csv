@@ -1,0 +1,14 @@
+﻿comparison,trip_field,related_field,matched_rows,mismatch_rows,status
+trip_vs_person,edad,edad,100174,0,same_values
+trip_vs_person,sexo,sexo,100174,0,same_values
+trip_vs_person,genero,genero,100174,0,same_values
+trip_vs_person,orien_sexual,orien_sexual,100174,0,same_values
+trip_vs_person,identidad_etnica,identidad_etnica,100174,0,same_values
+trip_vs_person,madre_cab_familia,madre_cab_familia,100174,0,same_values
+trip_vs_person,max_nivel_edu,max_nivel_edu,100174,0,same_values
+trip_vs_person,ocupacion_principal,ocupacion_principal,100174,0,same_values
+trip_vs_household,estra_hg,estrato_hg,100174,0,same_values
+trip_vs_household,nom_mun_hg,nom_mpio_hg,100174,77663,documented_difference
+trip_vs_household,cod_upl_hg,cod_upl_hg,100174,77663,documented_difference
+trip_vs_household,cod_utam_hg,cod_utam_hg,100174,0,same_values
+trip_vs_household,zat_hg,zat_hg,100174,0,same_values
